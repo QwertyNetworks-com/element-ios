@@ -3241,27 +3241,27 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
             [self presentViewController:self.shareManager.mainViewController animated:YES completion:nil];
         }]];
         
-        if (!isJitsiCallEvent)
-        {
-            [actionsMenu addAction:[UIAlertAction actionWithTitle:[VectorL10n roomEventActionQuote]
-                                                            style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {
-                
-                if (weakSelf)
-                {
-                    typeof(self) self = weakSelf;
-                    
-                    [self cancelEventSelection];
-                    
-                    // Quote the message a la Markdown into the input toolbar composer
-                    self.inputToolbarView.textMessage = [NSString stringWithFormat:@"%@\n>%@\n\n", self.inputToolbarView.textMessage, selectedComponent.textMessage];
-                    
-                    // And display the keyboard
-                    [self.inputToolbarView becomeFirstResponder];
-                }
-                
-            }]];
-        }
+//        if (!isJitsiCallEvent)
+//        {
+//            [actionsMenu addAction:[UIAlertAction actionWithTitle:[VectorL10n roomEventActionQuote]
+//                                                            style:UIAlertActionStyleDefault
+//                                                          handler:^(UIAlertAction * action) {
+//                
+//                if (weakSelf)
+//                {
+//                    typeof(self) self = weakSelf;
+//                    
+//                    [self cancelEventSelection];
+//                    
+//                    // Quote the message a la Markdown into the input toolbar composer
+//                    self.inputToolbarView.textMessage = [NSString stringWithFormat:@"%@\n>%@\n\n", self.inputToolbarView.textMessage, selectedComponent.textMessage];
+//                    
+//                    // And display the keyboard
+//                    [self.inputToolbarView becomeFirstResponder];
+//                }
+//                
+//            }]];
+//        }
         
         //Переводчик
         if (!isJitsiCallEvent)

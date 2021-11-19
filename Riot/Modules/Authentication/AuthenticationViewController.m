@@ -928,11 +928,18 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
     {
         if (!self.isIdentityServerConfigured)
         {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:[MatrixKitL10n error]
-                                                                           message:[VectorL10n authForgotPasswordErrorNoConfiguredIdentityServer]
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            [alert addAction:[UIAlertAction actionWithTitle:[MatrixKitL10n ok] style:UIAlertActionStyleDefault handler:nil]];
-            [self presentViewController:alert animated:YES completion:nil];
+//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:[MatrixKitL10n error]
+//                                                                           message:[VectorL10n authForgotPasswordErrorNoConfiguredIdentityServer]
+//                                                                    preferredStyle:UIAlertControllerStyleAlert];
+//            [alert addAction:[UIAlertAction actionWithTitle:[MatrixKitL10n ok] style:UIAlertActionStyleDefault handler:nil]];
+//            [self presentViewController:alert animated:YES completion:nil];
+//
+        NSString *lang = [[[NSBundle mainBundle]preferredLocalizations]objectAtIndex:0];
+                   NSString *urlWeb = [NSString stringWithFormat:@"https://qaim.me/%@/auth?reset", lang];
+                   NSURL *nsurl = [NSURL URLWithString:urlWeb];
+                   SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:nsurl];
+                   svc.delegate = self;
+                   [self presentViewController:svc animated:YES completion:nil];
             
             return;
         }
