@@ -481,18 +481,20 @@ TableViewSectionsDelegate>
         [tmpSections addObject:sectionIgnoredUsers];
     }
     
-    if (RiotSettings.shared.matrixApps)
-    {
-        Section *sectionIntegrations = [Section sectionWithTag:SECTION_TAG_INTEGRATIONS];
-        [sectionIntegrations addRowWithTag:INTEGRATIONS_INDEX];
-        sectionIntegrations.headerTitle = [VectorL10n settingsIntegrations];
-        
-        NSString *integrationManager = [WidgetManager.sharedManager configForUser:session.myUser.userId].apiUrl;
-        NSString *integrationManagerDomain = [NSURL URLWithString:integrationManager].host;
-        sectionIntegrations.footerTitle = [VectorL10n settingsIntegrationsAllowDescription:integrationManagerDomain];
-        
-        [tmpSections addObject:sectionIntegrations];
-    }
+//    интеграция
+    
+//    if (RiotSettings.shared.matrixApps)
+//    {
+//        Section *sectionIntegrations = [Section sectionWithTag:SECTION_TAG_INTEGRATIONS];
+//        [sectionIntegrations addRowWithTag:INTEGRATIONS_INDEX];
+//        sectionIntegrations.headerTitle = [VectorL10n settingsIntegrations];
+//
+//        NSString *integrationManager = [WidgetManager.sharedManager configForUser:session.myUser.userId].apiUrl;
+//        NSString *integrationManagerDomain = [NSURL URLWithString:integrationManager].host;
+//        sectionIntegrations.footerTitle = [VectorL10n settingsIntegrationsAllowDescription:integrationManagerDomain];
+//
+//        [tmpSections addObject:sectionIntegrations];
+//    }
     
     Section *sectionUserInterface = [Section sectionWithTag:SECTION_TAG_USER_INTERFACE];
     [sectionUserInterface addRowWithTag:USER_INTERFACE_LANGUAGE_INDEX];
