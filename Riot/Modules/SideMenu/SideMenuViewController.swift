@@ -151,7 +151,7 @@ final class SideMenuViewController: UIViewController {
     }
     
     private func updateUserInformation(with userAvatarViewData: UserAvatarViewData) {
-        self.userIdLabel.text = userAvatarViewData.userId
+        self.userIdLabel.text = ""
         self.userDisplayNameLabel.text = userAvatarViewData.displayName
         self.userDisplayNameLabel.isHidden = userAvatarViewData.displayName.isEmptyOrNil
                 

@@ -1433,7 +1433,7 @@
     self.userLoginContainer.hidden = YES;
     self.passwordContainer.hidden = YES;
     self.emailContainer.hidden = YES;
-    self.phoneContainer.hidden = NO;
+    self.phoneContainer.hidden = YES;
     self.repeatPasswordContainer.hidden = YES;
     
     // Hide other items
