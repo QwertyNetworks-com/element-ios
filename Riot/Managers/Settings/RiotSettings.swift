@@ -1,5 +1,6 @@
 /*
  Copyright 2018 New Vector Ltd
+ Copyright 2021 QWERTY NETWORKS Llc
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -67,8 +68,8 @@ final class RiotSettings: NSObject {
     @UserDefault(key: "homeserverurl", defaultValue: BuildSettings.serverConfigDefaultHomeserverUrlString, storage: defaults)
     var homeserverUrlString
     
-    @UserDefault(key: "identityserverurl", defaultValue: BuildSettings.serverConfigDefaultIdentityServerUrlString, storage: defaults)
-    var identityServerUrlString
+//    @UserDefault(key: "identityserverurl", defaultValue: BuildSettings.serverConfigDefaultIdentityServerUrlString, storage: defaults)
+//    var identityServerUrlString
     
     // MARK: Notifications
     

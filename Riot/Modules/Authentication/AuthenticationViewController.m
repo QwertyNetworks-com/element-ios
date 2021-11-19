@@ -2,6 +2,7 @@
  Copyright 2015 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2019 New Vector Ltd
+ Copyright 2021 QWERTY NETWORKS Llc
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -132,7 +133,7 @@ static const CGFloat kAuthInputContainerViewMinHeightConstraintConstant = 150.0;
     
     self.defaultHomeServerUrl = RiotSettings.shared.homeserverUrlString;
     
-    self.defaultIdentityServerUrl = RiotSettings.shared.identityServerUrlString;
+//    self.defaultIdentityServerUrl = RiotSettings.shared.identityServerUrlString;
     
     self.welcomeImageView.image = [UIImage imageNamed:@"horizontal_logo"];
     

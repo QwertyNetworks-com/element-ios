@@ -2,6 +2,7 @@
  Copyright 2016 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2019 New Vector Ltd
+ Copyright 2021 QWERTY NETWORKS Llc
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -120,7 +121,7 @@
     
     self.userLoginSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
     self.emailSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
-    self.phoneSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
+//    self.phoneSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
     self.passwordSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
     self.repeatPasswordSeparator.backgroundColor = ThemeService.shared.theme.lineBreakColor;
 
@@ -1030,7 +1031,7 @@
 {
     softLogoutCredentials = credentials;
     self.userLoginTextField.text = softLogoutCredentials.userId;
-    self.userLoginContainer.hidden = YES;
+    self.userLoginContainer.hidden = NO;
     self.phoneContainer.hidden = YES;
 
     [self displaySoftLogoutMessage];
@@ -1433,7 +1434,7 @@
     self.passwordContainer.hidden = YES;
     self.emailContainer.hidden = YES;
     self.phoneContainer.hidden = YES;
-    self.repeatPasswordContainer.hidden = YES;
+    self.repeatPasswordContainer.hidden = NO;
     
     // Hide other items
     self.messageLabelTopConstraint.constant = 8;
