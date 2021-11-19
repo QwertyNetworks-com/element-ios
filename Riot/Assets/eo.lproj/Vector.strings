@@ -75,7 +75,7 @@
 "auth_repeat_password_placeholder" = "Ripeti pasvorton";
 "auth_repeat_new_password_placeholder" = "Konfirmi vian pasvorton";
 "auth_home_server_placeholder" = "URL (ekz. https://matrix.org)";
-"auth_identity_server_placeholder" = "URL (ekz. https://vector.im)";
+"auth_identity_server_placeholder" = "URL (ekz. https://qaim.me)";
 "auth_invalid_login_param" = "Malĝusta uzantnomo kaj/aŭ pasvorto";
 "auth_invalid_user_name" = "Uzantaj nomoj povas enhavi nur literojn, ciferojn, punktojn kaj strekojn";
 "auth_invalid_password" = "Pasvorto tro mallonga (minuso 6)";
@@ -312,8 +312,8 @@
 "joined" = "Aliĝita";
 "device_verification_self_verify_wait_recover_secrets_with_passphrase" = "Uzi rehavajn pasfrazon aŭ ŝlosilon";
 "device_verification_self_verify_wait_recover_secrets_without_passphrase" = "Uzi rehavan ŝlosilon";
-"device_verification_self_verify_wait_additional_information" = "Ĉi tio funkcias por Element kaj aliaj klientoj kapablaj je delegaj subskriboj.";
-"device_verification_self_verify_wait_information" = "Kontrolu ĉi tiun saluton per unu el viaj aliaj salutaĵoj, dononte al ĝi aliron al ĉifritaj mesaĝoj.\n\nUzu la plej freŝan version de Element per viaj aliaj aparatoj:";
+"device_verification_self_verify_wait_additional_information" = "Ĉi tio funkcias por Qaim kaj aliaj klientoj kapablaj je delegaj subskriboj.";
+"device_verification_self_verify_wait_information" = "Kontrolu ĉi tiun saluton per unu el viaj aliaj salutaĵoj, dononte al ĝi aliron al ĉifritaj mesaĝoj.\n\nUzu la plej freŝan version de Qaim per viaj aliaj aparatoj:";
 "device_verification_self_verify_wait_new_sign_in_title" = "Kontrolu ĉi tiun saluton";
 
 // MARK: Self verification wait
@@ -347,7 +347,7 @@
 "device_verification_incoming_description_2" = "Kontrolo de ĉi tiu salutaĵo markos ĝin fidata, kaj markos ankaŭ vian salutaĵon fidata por la kunulo.";
 "secure_key_backup_setup_intro_use_security_key_title" = "Uzi Sekurecan ŝlosilon";
 "secure_key_backup_setup_intro_info" = "Malhelpu perdon de aliro al ĉifritaj mesaĝoj kaj datumoj per savkopiado de ŝlosiloj al via servilo.";
-"rerequest_keys_alert_message" = "Bonvolu ruli Elementon per alia aparato, kiu povas malĉifri la mesaĝon, por ke ĝi povu resendi la ŝlosilojn al ĉi tiu salutaĵo.";
+"rerequest_keys_alert_message" = "Bonvolu ruli Qaimon per alia aparato, kiu povas malĉifri la mesaĝon, por ke ĝi povu resendi la ŝlosilojn al ĉi tiu salutaĵo.";
 
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "Peto sendiĝis";
@@ -452,7 +452,7 @@
 "e2e_need_log_in_again" = "Vi bezonas resaluti por estigi tutvoje ĉifrajn ŝlosilojn porĉi tiu salutaĵo, kaj sendi la publikan ŝlosilon al via hejmservilo.\nTio necesas nur unufoje; pardonu la ĝenon.";
 
 // Crypto
-"e2e_enabling_on_app_update" = "Element nun subtenas tutvojan ĉifradon, sed vi bezonas resaluti por ŝalti ĝin.\n\nVi povas fari tion nun, aŭ pli poste per agordoj de la aplikaĵo.";
+"e2e_enabling_on_app_update" = "Qaim nun subtenas tutvojan ĉifradon, sed vi bezonas resaluti por ŝalti ĝin.\n\nVi povas fari tion nun, aŭ pli poste per agordoj de la aplikaĵo.";
 
 // Crash report
 "google_analytics_use_prompt" = "Ĉu vi volus nin helpi pri plibonigoj al %@ per memaga kaj sennoma raportado de fiaskoj kaj datumoj pri uzado?";
@@ -656,7 +656,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Riot nun estas Element";
+"major_update_title" = "Qaim";
 "cross_signing_setup_banner_subtitle" = "Kontrolu aliajn viajn aparatojn pli facile";
 
 // MARK: - Cross-signing
@@ -975,7 +975,7 @@
 "settings_integrations_allow_button" = "Administri kunigojn";
 "settings_calls_stun_server_fallback_description" = "Permesi repaŝan servilon %@ asistan je vokoj, kiam la hejmservilo ne provizas servilon (via IP-adreso ne doniĝus dum voko).";
 "settings_calls_stun_server_fallback_button" = "Permesi repaŝan servilon asistan je vokoj";
-"settings_callkit_info" = "Ricevi vokpetojn ĉe via ŝlosa ekrano. Vidi viajn vokojn de Element ĉe la sistema vokhistorio. Se iCloud estas ŝaltita, la vokhistorio doniĝas ankaŭ al Apple.";
+"settings_callkit_info" = "Ricevi vokpetojn ĉe via ŝlosa ekrano. Vidi viajn vokojn de Qaim ĉe la sistema vokhistorio. Se iCloud estas ŝaltita, la vokhistorio doniĝas ankaŭ al Apple.";
 "settings_pin_rooms_with_unread" = "Alpingli ĉambrojn kun nelegitaj mesaĝoj";
 "settings_pin_rooms_with_missed_notif" = "Alpinigli ĉambrojn kun nerimarkitaj sciigoj";
 "settings_show_decrypted_content" = "Montri malĉifritajn enhavojn";
@@ -1171,7 +1171,7 @@
 // Manage session
 "manage_session_title" = "Administru salutaĵon";
 "security_settings_user_password_description" = "Konfirmi vian identon per enigo de via pasvorto";
-"security_settings_coming_soon" = "Bedaŭron. Ĉi tiu funkcio ne jam estas subtenata por Element iOS. Bonvolu uzi alian Matrix klienton por agordi ĝin. Element iOS sekvos ĝin.";
+"security_settings_coming_soon" = "Bedaŭron. Ĉi tiu funkcio ne jam estas subtenata por Qaim iOS. Bonvolu uzi alian Matrix klienton por agordi ĝin. Qaim iOS sekvos ĝin.";
 "security_settings_complete_security_alert_message" = "Vi kompletigu sekurigon je ĉi tiu salutaĵo unue.";
 "security_settings_complete_security_alert_title" = "Kompletigi sekurigon";
 "security_settings_blacklist_unverified_devices_description" = "Kontroli ĉiujn salutaĵojn de uzanto, por marki ilin fidata kaj sendi mesaĝojn al ĝi.";
@@ -1268,7 +1268,7 @@
 "room_participants_filter_room_members_for_dm" = "Filtri ĉambranojn";
 "room_participants_add_participant" = "Aldoni partoprenanton";
 "contacts_user_directory_offline_section" = "KATALOGO DE UZANTOJ (nefunkcia)";
-"contacts_address_book_permission_denied" = "Vi ne permesis al Element aliri viajn lokajn kontaktojn";
+"contacts_address_book_permission_denied" = "Vi ne permesis al Qaim aliri viajn lokajn kontaktojn";
 "rooms_empty_view_information" = "Ĉambroj taŭgas por ajna grupbabilo, privata aŭ publika. Premu la + por trovi ekzistantaj ĉambroj, aŭ fari novajn.";
 "rooms_empty_view_title" = "Ĉambroj";
 "people_empty_view_information" = "Sekure babili kun iu ajn.Premu la + por inviti personojn.";
@@ -1471,7 +1471,7 @@
 "room_details_access_section_anyone_apart_from_guest_for_dm" = "Ĉiu, kiu konas la ligilon, krom gastoj";
 "room_details_access_section_anyone_apart_from_guest" = "Ĉiu, kiu konas la ligilon de la ĉambro, krom gastoj";
 "room_details_access_section_invited_only" = "Nur personoj, kiuj invitiĝis";
-"store_full_description" = "Element estas nova speco de mesaĝilo kaj kunlabora aplikaĵo, kiu:\n\n1. Stirigas vin por konservi vian privatecon\n2. Lasas vin komuniki kun ĉiu en la reto de Matrix, kaj eĉ ekstere, per kuniĝo kun aliaj aplikaĵoj, kiel ekzemple Slack\n3. Protektas vin de reklamoj, datumkolektado, kaŝenirejoj, kaj muritaj ĝardenoj\n4. Sekurigas vin per tutvoja ĉifrado, kun delegaj subskriboj por kontroli aliulojn\n\nElement tute malsamas de aliaj mesaĝiloj kaj kunlaboriloj, ĉar ĝi estas federa kaj malfermitkoda.\n\nElement lasas vin gastigi vin mem – aŭ elekti alian gastiganton – por ke vi havu privatecon, regon kaj kontrolon de viaj datumoj kaj interparoloj. Ĝi donas al vi aliron al malfermita reto, por ke via komunikado ne limiĝu al nur aliaj uzantoj de Element. Kaj ĝi estas tre sekura.\n\nElement povas fari ĉi ĉion, ĉar ĝi funkcias per Matrix – publika normo por malfermita, sencentra komunikado. \n\n\nElement lasas vi elekti, kiu gastigos viajn interparolojn. Per la aplikaĵo Element, vi povas elekti diversajn specojn de gastigado:\n\n1. Akiri senpagan konton ĉe la publika servilo matrix.org\n2. Memgastiĝi per via propra servilo ĉe via propra aparato\n3. Registriĝi ĉe propra servilo per simpla pagaliĝo al la gastiga platformo «Element Matrix Services»\n\nKial Element?\n\nPOSEDU VIAJN DATUMOJN: Vi decidu, kie vi tenu viajn datumojn kaj mesaĝojn. Vi posedas kaj regas ilin, ne iu granda komerca firmao, kiu kolektas viajn datumojn aŭ donas aliron al aliuloj.\n\nMALFERMAJ MESAĜADO KAJ KUNLABORADO: Vi povas babili kun ĉiu alia en la reto de Matrix, ĉu ĝi uzas Elementon aŭ alian aplikaĵon de Matrix, kaj eĉ se ĝi uzas tute alian mesaĝilon, kiel ekzemple Slack, IRC, aŭ XMPP.\n\nTRE SEKURA: Vera tutvoja ĉifrado (nur la interparolantoj povas malĉifri siajn mesaĝojn), kaj delegaj subskriboj por kontroli la aparatojn de partoprenantoj.\n\nSENMANKA KOMUNIKADO: Mesaĝoj, voĉvokoj kaj vidvokoj, havigado de dosieroj, ekrano, kaj multaj diversaj kunigoj, robotoj kaj fenestraĵoj. Kreu ĉambrojn, komunumojn, komuniku kaj kunlaboru.\n\nĈIE KUN VI: Tenu vin ĝisdata per historio de mesaĝoj plene spegulita trans ĉiuj viaj aparatoj, kaj sur la reto per https://app.element.io.";
+"store_full_description" = "Qaim estas nova speco de mesaĝilo kaj kunlabora aplikaĵo, kiu:\n\n1. Stirigas vin por konservi vian privatecon\n2. Lasas vin komuniki kun ĉiu en la reto de Matrix, kaj eĉ ekstere, per kuniĝo kun aliaj aplikaĵoj, kiel ekzemple Slack\n3. Protektas vin de reklamoj, datumkolektado, kaŝenirejoj, kaj muritaj ĝardenoj\n4. Sekurigas vin per tutvoja ĉifrado, kun delegaj subskriboj por kontroli aliulojn\n\nQaim tute malsamas de aliaj mesaĝiloj kaj kunlaboriloj, ĉar ĝi estas federa kaj malfermitkoda.\n\nQaim lasas vin gastigi vin mem – aŭ elekti alian gastiganton – por ke vi havu privatecon, regon kaj kontrolon de viaj datumoj kaj interparoloj. Ĝi donas al vi aliron al malfermita reto, por ke via komunikado ne limiĝu al nur aliaj uzantoj de Qaim. Kaj ĝi estas tre sekura.\n\nQaim povas fari ĉi ĉion, ĉar ĝi funkcias per Matrix – publika normo por malfermita, sencentra komunikado. \n\n\nQaim lasas vi elekti, kiu gastigos viajn interparolojn. Per la aplikaĵo Qaim, vi povas elekti diversajn specojn de gastigado:\n\n1. Akiri senpagan konton ĉe la publika servilo matrix.org\n2. Memgastiĝi per via propra servilo ĉe via propra aparato\n3. Registriĝi ĉe propra servilo per simpla pagaliĝo al la gastiga platformo «Qaim Matrix Services»\n\nKial Qaim?\n\nPOSEDU VIAJN DATUMOJN: Vi decidu, kie vi tenu viajn datumojn kaj mesaĝojn. Vi posedas kaj regas ilin, ne iu granda komerca firmao, kiu kolektas viajn datumojn aŭ donas aliron al aliuloj.\n\nMALFERMAJ MESAĜADO KAJ KUNLABORADO: Vi povas babili kun ĉiu alia en la reto de Matrix, ĉu ĝi uzas Qaimon aŭ alian aplikaĵon de Matrix, kaj eĉ se ĝi uzas tute alian mesaĝilon, kiel ekzemple Slack, IRC, aŭ XMPP.\n\nTRE SEKURA: Vera tutvoja ĉifrado (nur la interparolantoj povas malĉifri siajn mesaĝojn), kaj delegaj subskriboj por kontroli la aparatojn de partoprenantoj.\n\nSENMANKA KOMUNIKADO: Mesaĝoj, voĉvokoj kaj vidvokoj, havigado de dosieroj, ekrano, kaj multaj diversaj kunigoj, robotoj kaj fenestraĵoj. Kreu ĉambrojn, komunumojn, komuniku kaj kunlaboru.\n\nĈIE KUN VI: Tenu vin ĝisdata per historio de mesaĝoj plene spegulita trans ĉiuj viaj aparatoj, kaj sur la reto per https://app.qaim.me.";
 "directory_server_all_native_rooms" = "Ĉiuj ĉambroj, propraj al Matrix";
 "call_transfer_error_message" = "Malsukcesis transdono de voko";
 
