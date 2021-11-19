@@ -1,5 +1,6 @@
 // 
 // Copyright 2020 Vector Creations Ltd
+// Copyright 2021 QWERTY NETWORKS Llc
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -102,20 +103,18 @@ final class BuildSettings: NSObject {
     // MARK: - Server configuration
     
     // Default servers proposed on the authentication screen
-    static let serverConfigDefaultHomeserverUrlString = "https://matrix.org"
-    static let serverConfigDefaultIdentityServerUrlString = "https://vector.im"
-    
+    static let serverConfigDefaultHomeserverUrlString = "https://matrix.m.qaim.me/"
+    static let serverConfigDefaultIdentityServerUrlString = "https://matrix.m.qaim.me/"
+        
     static let serverConfigSygnalAPIUrlString = "https://matrix.org/_matrix/push/v1/notify"
-    
     
     // MARK: - Legal URLs
     
     // Note: Set empty strings to hide the related entry in application settings
     static let applicationCopyrightUrlString = "https://element.io/copyright"
-    static let applicationPrivacyPolicyUrlString = "https://element.io/privacy"
-    static let applicationTermsConditionsUrlString = "https://element.io/terms-of-service"
-    static let applicationHelpUrlString =
-    "https://element.io/help"
+    static let applicationPrivacyPolicyUrlString = "https://qaim.me/privacy"
+    static let applicationTermsConditionsUrlString = "https://qaim.me/agreement"
+    static let applicationHelpUrlString = "https://element.io/help"
     
     
     // MARk: - Matrix permalinks
@@ -238,29 +237,29 @@ final class BuildSettings: NSObject {
     static let settingsScreenShowUserFirstName: Bool = false
     static let settingsScreenShowUserSurname: Bool = false
     static let settingsScreenAllowAddingEmailThreepids: Bool = true
-    static let settingsScreenAllowAddingPhoneThreepids: Bool = true
-    static let settingsScreenShowThreepidExplanatory: Bool = true
-    static let settingsScreenShowDiscoverySettings: Bool = true
-    static let settingsScreenAllowIdentityServerConfig: Bool = true
+    static let settingsScreenAllowAddingPhoneThreepids: Bool = false // телефонный номер в меню
+    static let settingsScreenShowThreepidExplanatory: Bool = false
+    static let settingsScreenShowDiscoverySettings: Bool = false
+    static let settingsScreenAllowIdentityServerConfig: Bool = false
     static let settingsScreenShowConfirmMediaSize: Bool = true
-    static let settingsScreenShowAdvancedSettings: Bool = true
-    static let settingsScreenShowLabSettings: Bool = true
-    static let settingsScreenAllowChangingRageshakeSettings: Bool = true
-    static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = true
-    static let settingsScreenAllowBugReportingManually: Bool = true
+    static let settingsScreenShowAdvancedSettings: Bool = true // дополнительно
+    static let settingsScreenShowLabSettings: Bool = false
+    static let settingsScreenAllowChangingRageshakeSettings: Bool = false
+    static let settingsScreenAllowChangingCrashUsageDataSettings: Bool = false
+    static let settingsScreenAllowBugReportingManually: Bool = false
     static let settingsScreenAllowDeactivatingAccount: Bool = true
     static let settingsScreenShowChangePassword:Bool = true
     static let settingsScreenShowInviteFriends:Bool = true
-    static let settingsScreenShowEnableStunServerFallback: Bool = true
-    static let settingsScreenShowNotificationDecodedContentOption: Bool = true
+    static let settingsScreenShowEnableStunServerFallback: Bool = true //отзывы
+    static let settingsScreenShowNotificationDecodedContentOption: Bool = false
     static let settingsScreenShowNsfwRoomsOption: Bool = true
-    static let settingsSecurityScreenShowSessions:Bool = true
-    static let settingsSecurityScreenShowSetupBackup:Bool = true
-    static let settingsSecurityScreenShowRestoreBackup:Bool = true
+    static let settingsSecurityScreenShowSessions:Bool = false
+    static let settingsSecurityScreenShowSetupBackup:Bool = false
+    static let settingsSecurityScreenShowRestoreBackup:Bool = false
     static let settingsSecurityScreenShowDeleteBackup:Bool = true
-    static let settingsSecurityScreenShowCryptographyInfo:Bool = true
-    static let settingsSecurityScreenShowCryptographyExport:Bool = true
-    static let settingsSecurityScreenShowAdvancedUnverifiedDevices:Bool = true
+    static let settingsSecurityScreenShowCryptographyInfo:Bool = false
+    static let settingsSecurityScreenShowCryptographyExport:Bool = false
+    static let settingsSecurityScreenShowAdvancedUnverifiedDevices:Bool = false
 
     // MARK: - Timeline settings
     static let roomInputToolbarCompressionMode = MXKRoomInputToolbarCompressionModePrompt
@@ -328,9 +327,9 @@ final class BuildSettings: NSObject {
     
     // MARK: - Authentication Screen
     static let authScreenShowRegister = true
-    static let authScreenShowPhoneNumber = true
+    static let authScreenShowPhoneNumber = false
     static let authScreenShowForgotPassword = true
-    static let authScreenShowCustomServerOptions = true
+    static let authScreenShowCustomServerOptions = false
     
     // MARK: - Unified Search
     static let unifiedSearchScreenShowPublicDirectory = true
