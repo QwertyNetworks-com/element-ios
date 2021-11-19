@@ -1031,8 +1031,8 @@
 {
     softLogoutCredentials = credentials;
     self.userLoginTextField.text = softLogoutCredentials.userId;
-    self.userLoginContainer.hidden = NO;
-    self.phoneContainer.hidden = YES;
+    self.userLoginContainer.hidden = YES;
+    self.phoneContainer.hidden = NO;
 
     [self displaySoftLogoutMessage];
 }
@@ -1433,8 +1433,8 @@
     self.userLoginContainer.hidden = YES;
     self.passwordContainer.hidden = YES;
     self.emailContainer.hidden = YES;
-    self.phoneContainer.hidden = YES;
-    self.repeatPasswordContainer.hidden = NO;
+    self.phoneContainer.hidden = NO;
+    self.repeatPasswordContainer.hidden = YES;
     
     // Hide other items
     self.messageLabelTopConstraint.constant = 8;

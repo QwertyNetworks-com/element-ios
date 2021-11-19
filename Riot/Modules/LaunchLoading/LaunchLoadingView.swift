@@ -23,7 +23,7 @@ final class LaunchLoadingView: UIView, NibLoadable, Themable {
     // MARK: - Constants
     
     private enum LaunchAnimation {
-        static let duration: TimeInterval = 3.0
+        static let duration: TimeInterval = 1.0
         static let repeatCount = Float.greatestFiniteMagnitude
     }
     

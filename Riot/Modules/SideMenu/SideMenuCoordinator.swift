@@ -2,6 +2,7 @@
 // $ createScreen.sh SideMenu SideMenu
 /*
  Copyright 2020 New Vector Ltd
+ Copyright 2021 QWERTY NETWORKS Llc
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -188,14 +189,27 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
         // Push view controller and dismiss side menu
         self.sideMenuNavigationViewController.pushViewController(viewController, animated: true)
     }
+        
+        private func showAboutToast() {
+            let alert = UIAlertController(title: nil, message: "This application is based on the Matrix messaging protocol and the Element IOS client", preferredStyle: .actionSheet)
+            alert.view.backgroundColor = .none
+            alert.view.alpha = 1
+            alert.view.layer.cornerRadius = 5
+            self.sideMenuNavigationViewController.present(alert, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                alert.dismiss(animated: true)
+            }
+        }
+        
+        
     
     private func showBugReport() {
         let bugReportViewController = BugReportViewController()
-        
+
         // Show in fullscreen to animate presentation along side menu dismiss
         bugReportViewController.modalPresentationStyle = .fullScreen
         bugReportViewController.modalTransitionStyle = .crossDissolve
-        
+
         self.sideMenuNavigationViewController.present(bugReportViewController, animated: true)
     }
     
@@ -203,9 +217,9 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
         guard let helpURL = URL(string: BuildSettings.applicationHelpUrlString) else {
             return
         }
-        
+
         let safariViewController = SFSafariViewController(url: helpURL)
-        
+
         // Show in fullscreen to animate presentation along side menu dismiss
         safariViewController.modalPresentationStyle = .fullScreen
         self.sideMenuNavigationViewController.present(safariViewController, animated: true, completion: nil)
@@ -270,7 +284,7 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
     @objc private func userSessionsServiceDidAddUserSession(_ notification: Notification) {
         self.addSpaceListIfNeeded()
     }
-}
+} 
 
 // MARK: - SideMenuViewModelCoordinatorDelegate
 extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
@@ -283,9 +297,9 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
         case .settings:
             self.showSettings()
         case .help:
-            self.showHelp()
-        case .feedback:
-            self.showBugReport()
+            self.showAboutToast()
+//        case .feedback:
+//            self.showBugReport()
         }
         
         self.delegate?.sideMenuCoordinator(self, didTapMenuItem: menuItem, fromSourceView: sourceView)

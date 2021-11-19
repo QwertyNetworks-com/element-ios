@@ -68,8 +68,8 @@ final class RiotSettings: NSObject {
     @UserDefault(key: "homeserverurl", defaultValue: BuildSettings.serverConfigDefaultHomeserverUrlString, storage: defaults)
     var homeserverUrlString
     
-//    @UserDefault(key: "identityserverurl", defaultValue: BuildSettings.serverConfigDefaultIdentityServerUrlString, storage: defaults)
-//    var identityServerUrlString
+    @UserDefault(key: "identityserverurl", defaultValue: BuildSettings.serverConfigDefaultIdentityServerUrlString, storage: defaults)
+    var identityServerUrlString
     
     // MARK: Notifications
     

@@ -1,5 +1,6 @@
 // 
 // Copyright 2021 Vector Creations Ltd
+// Copyright 2021 QWERTY NETWORKS Llc
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
 
 
 // App identity
-BUNDLE_DISPLAY_NAME = Element
+BUNDLE_DISPLAY_NAME = Qaim
 BASE_BUNDLE_IDENTIFIER = im.vector.app
 APPLICATION_GROUP_IDENTIFIER = group.im.vector
 APPLICATION_SCHEME = element
