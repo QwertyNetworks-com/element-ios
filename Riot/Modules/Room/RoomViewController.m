@@ -2,6 +2,7 @@
  Copyright 2014 OpenMarket Ltd
  Copyright 2017 Vector Creations Ltd
  Copyright 2018 New Vector Ltd
+ Copyright 2021 QWERTY NETWORKS Llc
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -3261,6 +3262,43 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
                 
             }]];
         }
+        
+        //Переводчик
+        if (!isJitsiCallEvent)
+               {
+                   [currentAlert addAction:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Translate", @"Vector", nil)
+                                                                    style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {
+                       
+                       NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://test.mybusines.app/api/translate"]];
+                                      NSString *text = [NSString stringWithString:@"Hello Aleks"];
+                                      [urlRequest setHTTPMethod:@"POST"];
+                                      
+                                      NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
+                                      [urlRequest setHTTPBody:data];
+                                      
+                                      NSURLSession *session = [NSURLSession sharedSession];
+                                      NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+                                          NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                          if(httpResponse.statusCode ==200) {
+                                              NSError *parseError = nil;
+                                              NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error: &parseError];
+                                              NSLog(@"это мой %@", responseDictionary);
+                                              NSInteger *sucess = [[responseDictionary objectForKey:@"sucess"] integerValue];
+                                              if(sucess == 1) {
+                                                  NSLog(@"Login SUCESS");
+                                              } else {
+                                                  NSLog(@"Login FAILURE");
+                                              }
+                                          } else {
+                                              NSLog(error);
+                                          }
+                                      }];
+                                      [dataTask resume];
+                       
+//                           MXLogDebug(selectedComponent.textMessage)
+                   }]];
+               }
         
         if (!isJitsiCallEvent && BuildSettings.messageDetailsAllowShare)
         {
