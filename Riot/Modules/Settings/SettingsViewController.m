@@ -420,15 +420,15 @@ TableViewSectionsDelegate>
     
     if (BuildSettings.allowVoIPUsage && BuildSettings.stunServerFallbackUrlString && RiotSettings.shared.settingsScreenShowEnableStunServerFallback)
     {
-        Section *sectionCalls = [Section sectionWithTag:SECTION_TAG_CALLS];
-        sectionCalls.headerTitle = [VectorL10n settingsCallsSettings];
-        
-        // Remove "stun:"
-        NSString* stunFallbackHost = [BuildSettings.stunServerFallbackUrlString componentsSeparatedByString:@":"].lastObject;
-        sectionCalls.footerTitle = [VectorL10n settingsCallsStunServerFallbackDescription:stunFallbackHost];
-
-        [sectionCalls addRowWithTag:CALLS_ENABLE_STUN_SERVER_FALLBACK_INDEX];
-        [tmpSections addObject:sectionCalls];
+//        Section *sectionCalls = [Section sectionWithTag:SECTION_TAG_CALLS];
+//        sectionCalls.headerTitle = [VectorL10n settingsCallsSettings];
+//        
+//        // Remove "stun:"
+//        NSString* stunFallbackHost = [BuildSettings.stunServerFallbackUrlString componentsSeparatedByString:@":"].lastObject;
+//        sectionCalls.footerTitle = [VectorL10n settingsCallsStunServerFallbackDescription:stunFallbackHost];
+//
+//        [sectionCalls addRowWithTag:CALLS_ENABLE_STUN_SERVER_FALLBACK_INDEX];
+//        [tmpSections addObject:sectionCalls];
     }
     
     if (BuildSettings.settingsScreenShowDiscoverySettings)
