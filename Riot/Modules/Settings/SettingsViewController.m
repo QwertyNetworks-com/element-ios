@@ -528,10 +528,10 @@ TableViewSectionsDelegate>
     [tmpSections addObject:sectionAdvanced];
     
     Section *sectionAbout = [Section sectionWithTag:SECTION_TAG_ABOUT];
-    if (BuildSettings.applicationCopyrightUrlString.length)
-    {
-        [sectionAbout addRowWithTag:ABOUT_COPYRIGHT_INDEX];
-    }
+//    if (BuildSettings.applicationCopyrightUrlString.length)
+//    {
+//        [sectionAbout addRowWithTag:ABOUT_COPYRIGHT_INDEX];
+//    }
     if (BuildSettings.applicationTermsConditionsUrlString.length)
     {
         [sectionAbout addRowWithTag:ABOUT_TERM_CONDITIONS_INDEX];
@@ -2701,15 +2701,15 @@ TableViewSectionsDelegate>
         }
         else if (section == SECTION_TAG_ABOUT)
         {
-            if (row == ABOUT_COPYRIGHT_INDEX)
-            {
-                WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:BuildSettings.applicationCopyrightUrlString];
-                
-                webViewViewController.title = [VectorL10n settingsCopyright];
-                
-                [self pushViewController:webViewViewController];
-            }
-            else if (row == ABOUT_TERM_CONDITIONS_INDEX)
+//            if (row == ABOUT_COPYRIGHT_INDEX)
+//            {
+//                WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:BuildSettings.applicationCopyrightUrlString];
+//
+//                webViewViewController.title = [VectorL10n settingsCopyright];
+//
+//                [self pushViewController:webViewViewController];
+//            }
+            if (row == ABOUT_TERM_CONDITIONS_INDEX)
             {
                 WebViewViewController *webViewViewController = [[WebViewViewController alloc] initWithURL:BuildSettings.applicationTermsConditionsUrlString];
                 
