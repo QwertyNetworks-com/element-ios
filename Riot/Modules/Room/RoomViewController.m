@@ -3241,65 +3241,91 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
             [self presentViewController:self.shareManager.mainViewController animated:YES completion:nil];
         }]];
         
-//        if (!isJitsiCallEvent)
-//        {
-//            [actionsMenu addAction:[UIAlertAction actionWithTitle:[VectorL10n roomEventActionQuote]
-//                                                            style:UIAlertActionStyleDefault
-//                                                          handler:^(UIAlertAction * action) {
-//                
-//                if (weakSelf)
-//                {
-//                    typeof(self) self = weakSelf;
-//                    
-//                    [self cancelEventSelection];
-//                    
-//                    // Quote the message a la Markdown into the input toolbar composer
-//                    self.inputToolbarView.textMessage = [NSString stringWithFormat:@"%@\n>%@\n\n", self.inputToolbarView.textMessage, selectedComponent.textMessage];
-//                    
-//                    // And display the keyboard
-//                    [self.inputToolbarView becomeFirstResponder];
-//                }
-//                
-//            }]];
-//        }
-        
         //Переводчик
         if (!isJitsiCallEvent)
-               {
-                   [currentAlert addAction:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Translate", @"Vector", nil)
-                                                                    style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {
-                       
-                       NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://test.mybusines.app/api/translate"]];
-                                      NSString *text = [NSString stringWithString:@"Hello Aleks"];
-                                      [urlRequest setHTTPMethod:@"POST"];
-                                      
-                                      NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
-                                      [urlRequest setHTTPBody:data];
-                                      
-                                      NSURLSession *session = [NSURLSession sharedSession];
-                                      NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
-                                          NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-                                          if(httpResponse.statusCode ==200) {
-                                              NSError *parseError = nil;
-                                              NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error: &parseError];
-                                              NSLog(@"это мой %@", responseDictionary);
-                                              NSInteger *sucess = [[responseDictionary objectForKey:@"sucess"] integerValue];
-                                              if(sucess == 1) {
-                                                  NSLog(@"Login SUCESS");
-                                              } else {
-                                                  NSLog(@"Login FAILURE");
-                                              }
-                                          } else {
-                                              NSLog(error);
-                                          }
-                                      }];
-                                      [dataTask resume];
-                       
-//                           MXLogDebug(selectedComponent.textMessage)
-                   }]];
-               }
+        {
+            [actionsMenu addAction:[UIAlertAction actionWithTitle:[VectorL10n roomEventActionQuote]
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+
+                if (weakSelf)
+                {
+                    typeof(self) self = weakSelf;
+
+                    [self cancelEventSelection];
+
+                    // Quote the message a la Markdown into the input toolbar composer
+                    self.inputToolbarView.textMessage = [NSString stringWithFormat:@"%@\n>%@\n\n", self.inputToolbarView.textMessage, selectedComponent.textMessage];
+
+                    // And display the keyboard
+                    [self.inputToolbarView becomeFirstResponder];
+                }
+
+            }]];
+        }
         
+        
+        if (!isJitsiCallEvent)
+        {
+            [actionsMenu addAction:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"Translate", @"Vector", nil)
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                            
+                NSString *userLocale = [[NSLocale currentLocale] localeIdentifier];
+                NSString *userLanguage = [userLocale substringToIndex:2];
+                NSLog(@"мой язык устройсква :%@", userLanguage);
+                
+                NSString *urlString1 = @"https://test.mybusines.app/api/translate";
+                NSDictionary *jsonBodyDict = @{@"phrase":selectedComponent.textMessage, @"lng":userLanguage};
+                NSData *jsonBodyData = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
+            
+                NSMutableURLRequest *request = [NSMutableURLRequest new];
+                request.HTTPMethod = @"POST";
+
+                [request setURL:[NSURL URLWithString:urlString1]];
+                [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+                [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+                [request setHTTPBody:jsonBodyData];
+
+  
+
+                NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+                NSURLSession *session = [NSURLSession sessionWithConfiguration:config
+                                                                      delegate:nil
+                                                                 delegateQueue:[NSOperationQueue mainQueue]];
+                NSURLSessionDataTask *task = [session dataTaskWithRequest:request
+                                                        completionHandler:^(NSData * _Nullable data,
+                                                                            NSURLResponse * _Nullable response,
+                                                                            NSError * _Nullable error) {
+                                NSLog(@"Yay, done! Check for errors in response!");
+                                
+
+                                NSHTTPURLResponse *asHTTPResponse = (NSHTTPURLResponse *) response;
+                                NSLog(@"The response is: %@", asHTTPResponse);
+                                
+                                NSDictionary *forJSONObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                                              options:kNilOptions
+                                                                                                error:nil];
+                              
+//                                NSArray *forJSONArray = [NSJSONSerialization JSONObjectWithData:data
+//                                                                                        options:kNilOptions
+//                                                                                          error:nil];
+
+//                                NSLog(@"One of these might exist - object: %@ \n array: %@", forJSONObject, forJSONArray);
+                    NSString *value = [forJSONObject objectForKey:@"translation"];
+                 
+
+                    [self showAlertWithTitle:@"Translate" message:value];
+                            }];
+                [task resume];
+                
+            }]];
+        }
+        
+        
+      
+////                           MXLogDebug(selectedComponent.textMessage)
+
         if (!isJitsiCallEvent && BuildSettings.messageDetailsAllowShare)
         {
             [actionsMenu addAction:[UIAlertAction actionWithTitle:[VectorL10n roomEventActionShare]

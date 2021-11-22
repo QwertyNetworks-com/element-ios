@@ -248,12 +248,12 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
         self.membersCoordinator = spaceMembersCoordinator
     }
 
-    private func showInviteFriends(from sourceView: UIView?) {
-        let myUserId = self.parameters.userSessionsService.mainUserSession?.userId ?? ""
-        
-        let inviteFriendsPresenter = InviteFriendsPresenter()
-        inviteFriendsPresenter.present(for: myUserId, from: self.sideMenuViewController, sourceView: sourceView, animated: true)
-    }
+//    private func showInviteFriends(from sourceView: UIView?) {
+//        let myUserId = self.parameters.userSessionsService.mainUserSession?.userId ?? ""
+//        
+//        let inviteFriendsPresenter = InviteFriendsPresenter()
+//        inviteFriendsPresenter.present(for: myUserId, from: self.sideMenuViewController, sourceView: sourceView, animated: true)
+//    }
     
     private func showMenu(forSpaceWithId spaceId: String, from sourceView: UIView?) {
         guard let session = self.parameters.userSessionsService.mainUserSession?.matrixSession else {
@@ -292,8 +292,8 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
     func sideMenuViewModel(_ viewModel: SideMenuViewModelType, didTapMenuItem menuItem: SideMenuItem, fromSourceView sourceView: UIView) {
         
         switch menuItem {
-        case .inviteFriends:
-            self.showInviteFriends(from: sourceView)
+//        case .inviteFriends:
+//            self.showInviteFriends(from: sourceView)
         case .settings:
             self.showSettings()
         case .help:

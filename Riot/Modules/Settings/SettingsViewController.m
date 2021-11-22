@@ -463,10 +463,10 @@ TableViewSectionsDelegate>
             [sectionLocalContacts addRowWithTag:LOCAL_CONTACTS_PHONEBOOK_COUNTRY_INDEX];
         }
         
-        NSString *headerTitle = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? VectorL10n.settingsPhoneContacts : VectorL10n.settingsContacts;
-        sectionLocalContacts.headerTitle = headerTitle;
-        sectionLocalContacts.footerTitle = VectorL10n.settingsContactsEnableSyncDescription;
-        [tmpSections addObject:sectionLocalContacts];
+//        NSString *headerTitle = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? VectorL10n.settingsPhoneContacts : VectorL10n.settingsContacts;
+//        sectionLocalContacts.headerTitle = headerTitle;
+//        sectionLocalContacts.footerTitle = VectorL10n.settingsContactsEnableSyncDescription;
+//        [tmpSections addObject:sectionLocalContacts];
     }
     
     MXSession *session = [AppDelegate theDelegate].mxSessions.firstObject;

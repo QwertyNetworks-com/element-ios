@@ -23,6 +23,7 @@ import Foundation
     case more
     case resend
     case delete
+
     
     // MARK: - Properties
     
@@ -42,6 +43,7 @@ import Foundation
             title = VectorL10n.retry
         case .delete:
             title = VectorL10n.roomEventActionDelete
+       
         }
         
         return title
@@ -63,6 +65,7 @@ import Foundation
             image = Asset.Images.roomContextMenuRetry.image
         case .delete:
             image = Asset.Images.roomContextMenuDelete.image
+    
         default:
             image = nil
         }

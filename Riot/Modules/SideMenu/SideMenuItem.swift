@@ -19,7 +19,7 @@ import Foundation
 
 /// SideMenuItem represents side menu actions
 enum SideMenuItem {
-    case inviteFriends
+//    case inviteFriends
     case settings
     case help
 //    case feedback
@@ -31,8 +31,8 @@ extension SideMenuItem {
         let title: String
 
         switch self {
-        case .inviteFriends:
-            title = VectorL10n.sideMenuActionInviteFriends
+//        case .inviteFriends:
+//            title = VectorL10n.sideMenuActionInviteFriends
         case .settings:
             title = VectorL10n.sideMenuActionSettings
         case .help:
@@ -48,8 +48,8 @@ extension SideMenuItem {
         let icon: UIImage
 
         switch self {
-        case .inviteFriends:
-            icon = Asset.Images.sideMenuActionIconShare.image
+//        case .inviteFriends:
+//            icon = Asset.Images.sideMenuActionIconShare.image
         case .settings:
             icon = Asset.Images.sideMenuActionIconSettings.image
         case .help:
