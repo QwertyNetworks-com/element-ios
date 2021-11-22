@@ -1437,14 +1437,15 @@ TableViewSectionsDelegate>
  
     NSString *loggedUserInfo = [MatrixKitL10n settingsConfigUserId:account.mxCredentials.userId];
     
-    NSString *homeserverInfo = [MatrixKitL10n settingsConfigHomeServer:account.mxCredentials.homeServer];       
+    // показ домашнего сервера
+//    NSString *homeserverInfo = [MatrixKitL10n settingsConfigHomeServer:account.mxCredentials.homeServer];
     
     NSString *sdkVersionInfo = [NSString stringWithFormat:@"Matrix SDK %@", MatrixSDKVersion];
     
     NSString *olmVersionInfo = [NSString stringWithFormat:@"OLM %@", [OLMKit versionString]];    
     
     [footerText appendFormat:@"%@\n", loggedUserInfo];
-    [footerText appendFormat:@"%@\n", homeserverInfo];
+//    [footerText appendFormat:@"%@\n", homeserverInfo];
     [footerText appendFormat:@"%@\n", appVersionInfo];
     [footerText appendFormat:@"%@\n", sdkVersionInfo];
     [footerText appendFormat:@"%@", olmVersionInfo];
