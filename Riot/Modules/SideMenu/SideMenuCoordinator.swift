@@ -214,7 +214,7 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
     }
     
     private func showHelp() {
-        guard let helpURL = URL(string: BuildSettings.applicationHelpUrlString) else {
+        guard let helpURL = URL(string: "https://qaim.me/aboutapp") else {
             return
         }
 
@@ -297,7 +297,7 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
         case .settings:
             self.showSettings()
         case .help:
-            self.showAboutToast()
+            self.showHelp()
 //        case .feedback:
 //            self.showBugReport()
         }
