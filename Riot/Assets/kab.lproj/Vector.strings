@@ -38,7 +38,7 @@
 // Intro
 
 "secure_key_backup_setup_intro_title" = "Aḥraz aɣelsan";
-"rerequest_keys_alert_message" = "Ma ulac aɣilif err Qaim deg yibenk-nniḍen i izemren ad yekkes awgelhen i yiznan, akken ad yizmir ad yazen tisura ɣer tɣimit-a.";
+"rerequest_keys_alert_message" = "Ma ulac aɣilif err MyBusiness deg yibenk-nniḍen i izemren ad yekkes awgelhen i yiznan, akken ad yizmir ad yazen tisura ɣer tɣimit-a.";
 "deactivate_account_password_alert_title" = "Sens amiḍan";
 "deactivate_account_validate_action" = "Sens amiḍan";
 "deactivate_account_forget_messages_information_part2_emphasize" = "Asmigel";
@@ -829,7 +829,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Qaim";
+"major_update_title" = "MyBusiness";
 "secrets_reset_authentication_message" = "Sekcem awal uffir n umiḍan-ik·im i usentem";
 "secrets_reset_warning_title" = "Ma yella twennzeḍ kullec";
 
@@ -1199,7 +1199,7 @@
 "auth_phone_is_required" = "Ulac aqeddac n timagit yettusewlen, ɣef waya ur tettizmireḍ ara ad ternuḍ tansa n yimayl i wakken ad twennzeḍ awal-ik·im uffir ɣer sdat.";
 "auth_invalid_phone" = "Ur tettban ara d uṭṭun n tiliɣri ameɣtu";
 "auth_invalid_email" = "Ur tettban ara d tansa n yimayl tameɣtut";
-"auth_identity_server_placeholder" = "URL (e.g. https://qaim.me)";
+"auth_identity_server_placeholder" = "URL (e.g. https://mybusines.me)";
 "auth_home_server_placeholder" = "URL (e.g. https://matrix.org)";
 
 // Accessibility
@@ -1208,9 +1208,9 @@
 "send_to" = "Azen ɣer %@";
 "active_call_details" = "Asiwel urmid (%@)";
 "active_call" = "Rmed asiwel";
-"store_full_description" = "Qaim d anaw amaynut n usnas n tirawt d umɛiwen i:\n\n1. Ad ak·akem-yeǧǧ ad tsedduḍ aḍman n tudert-ik·im tabaḍnit\n2. Ad ak·akem-yeǧǧ ad teqqneḍ d yal win·tin yellan deg uzeṭṭa n Matrix, ula beṛṛa-ines s usleɣ n yisnasen am Slack\n3. Ad ak·akem-iḥrez seg udellel, seg yilɣa, seg tewwura yeffren d telmatin ifergen\n4. Ad tettuɣellseḍ s uwgelhen seg yixef ɣer yixef, s uzmul anmidag swayes ara tesneqdeḍ wiyaḍ\n\nQaim yemgarad akk ɣef yisnasen-nniḍen n tirawt d umɛiwen yerna n uɣbalu yeldin.\n\nQaim ad ak·akem-yeǧǧ ad tzedɣeḍ s wudem awurman - neɣ ad tferneḍ asenneftaɣ - i wakken ad tesɛuḍ tabaḍnit, ad tesɛuḍ ayla, ad tsedduḍ yisefka-inek·inem d yidewenniyen akken i tebɣiḍ. Ad ak·am-imudd anekcum ɣer uzeṭṭa yeldin; akken mačči kan d ameslay ara temmeslayeḍ d yiseqdacen-nniḍen n Qaim. Rnu d aɣellsan aṭas.\n\nQaim yezmer ad yeg akk aya acku iteddu ɣef Matrix - alugen i teywalt yeldin.\n\nQaim ad ak·am-imudd asenqed, ad ak·akem-yeǧǧ ad tferneḍ anwa ara yeɣren idiwenniyen-inek·inem. Seg usnas n Qaim, tzemreḍ ad tferneḍ iwumi ara tmuddeḍ tanezduɣt s yiberdan yemgaraden:\n\n1. Awi amiḍan baṭel ɣef uqeddac azayaz n matrix.org\n2. Sezdeɣ s timmad-ik·im amiḍan-inek·inem s uselkem n uqeddac ɣef yibenk-inek·inem\n3. Rnu amiḍan ɣef uqeddac udmawan s umulteɣ ɣer tɣerɣert n tnezduɣt n Qaim Matrix Services\n\nI wacu ara tferneḍ Qaim?\n\nILI-IK·IKEM D BAB N YISEFKA-INEK·INEM: D kečč·kemm ara ifernen adeg anida ara terreḍ isefka-inek·inem d yiznan-inek·inem. D ayla-inek·inem, ad t-tsedduḍ akken i tebɣiḍ. Mačči d kra n MEGACORP ara d-isuffɣen isefka-inek·inem neɣ ad imudd anekcum i wis kraḍ.\n\nTIRAWT YELDIN D UMƐIWEN: Tzemreḍ ad temmeslayeḍ d umdan-nniḍen akk n uzeṭṭa Matrix, isseqdac Qaim neɣ asnas-nniḍen n Matrix, ɣas ulamma isseqdac anagraw-nniḍen yemgarraden ɣef Slack, IRC neɣ XMPP.\n\nD AƔELLSAN ALMI DAYEN: d awgelhen n tidet seg yixef ɣer yixef (ala imttekkiyen deg udiwenni i izemren ad kksen awgelhen i yiznan) d uzmul anmidag i usenqed n yibenkan n yimttekkiyen deg udiwenni.\n\nTAYWALT YEMMDEN: Tirawt, isawalen s taɣect d tvidyut, beṭṭu n yifuyla, beṭṭu n ugdil d tegrumma yemmden n yimsidaf, n yibuten d yiwiǧiten. Rnu tixxamin, timɣiwnin, qqim mmeslay rnu seddu lecɣl.\n\nANIDA YEƔU TILIḌ: Ili-k·ikem d wid tettmeslayeḍ anida yebɣu tiliḍ s uzray n yiznan yemtawan akken iwata ɣef meṛṛa ibenkan-inek·inem akked ɣef web deg https://qaim.me/app.";
-"settings_callkit_info" = "Nermes-d isawalen i d-ikecmen ɣef ugdil-inek·inem isekkṛen. Wali isawalen-inek·inem n Qaim deg uzray n yisawalen n unagraw. Ma yella iCloud yetturmed, azray-a n yisawalen ad yettwabḍu akked Apple.";
-"store_promotional_text" = "Nermes-d isawalen i d-ikecmen ɣef ugdil-inek·inem isekkṛen. Wali isawalen-inek·inem n Qaim deg uzray n yisawalen n unagraw. Ma yella iCloud yetturmed, azray-a n yisawalen ad yettwabḍu akked Apple.";
+"store_full_description" = "MyBusiness d anaw amaynut n usnas n tirawt d umɛiwen i:\n\n1. Ad ak·akem-yeǧǧ ad tsedduḍ aḍman n tudert-ik·im tabaḍnit\n2. Ad ak·akem-yeǧǧ ad teqqneḍ d yal win·tin yellan deg uzeṭṭa n Matrix, ula beṛṛa-ines s usleɣ n yisnasen am Slack\n3. Ad ak·akem-iḥrez seg udellel, seg yilɣa, seg tewwura yeffren d telmatin ifergen\n4. Ad tettuɣellseḍ s uwgelhen seg yixef ɣer yixef, s uzmul anmidag swayes ara tesneqdeḍ wiyaḍ\n\nMyBusiness yemgarad akk ɣef yisnasen-nniḍen n tirawt d umɛiwen yerna n uɣbalu yeldin.\n\nMyBusiness ad ak·akem-yeǧǧ ad tzedɣeḍ s wudem awurman - neɣ ad tferneḍ asenneftaɣ - i wakken ad tesɛuḍ tabaḍnit, ad tesɛuḍ ayla, ad tsedduḍ yisefka-inek·inem d yidewenniyen akken i tebɣiḍ. Ad ak·am-imudd anekcum ɣer uzeṭṭa yeldin; akken mačči kan d ameslay ara temmeslayeḍ d yiseqdacen-nniḍen n MyBusiness. Rnu d aɣellsan aṭas.\n\nMyBusiness yezmer ad yeg akk aya acku iteddu ɣef Matrix - alugen i teywalt yeldin.\n\nMyBusiness ad ak·am-imudd asenqed, ad ak·akem-yeǧǧ ad tferneḍ anwa ara yeɣren idiwenniyen-inek·inem. Seg usnas n MyBusiness, tzemreḍ ad tferneḍ iwumi ara tmuddeḍ tanezduɣt s yiberdan yemgaraden:\n\n1. Awi amiḍan baṭel ɣef uqeddac azayaz n matrix.org\n2. Sezdeɣ s timmad-ik·im amiḍan-inek·inem s uselkem n uqeddac ɣef yibenk-inek·inem\n3. Rnu amiḍan ɣef uqeddac udmawan s umulteɣ ɣer tɣerɣert n tnezduɣt n MyBusiness Matrix Services\n\nI wacu ara tferneḍ MyBusiness?\n\nILI-IK·IKEM D BAB N YISEFKA-INEK·INEM: D kečč·kemm ara ifernen adeg anida ara terreḍ isefka-inek·inem d yiznan-inek·inem. D ayla-inek·inem, ad t-tsedduḍ akken i tebɣiḍ. Mačči d kra n MEGACORP ara d-isuffɣen isefka-inek·inem neɣ ad imudd anekcum i wis kraḍ.\n\nTIRAWT YELDIN D UMƐIWEN: Tzemreḍ ad temmeslayeḍ d umdan-nniḍen akk n uzeṭṭa Matrix, isseqdac MyBusiness neɣ asnas-nniḍen n Matrix, ɣas ulamma isseqdac anagraw-nniḍen yemgarraden ɣef Slack, IRC neɣ XMPP.\n\nD AƔELLSAN ALMI DAYEN: d awgelhen n tidet seg yixef ɣer yixef (ala imttekkiyen deg udiwenni i izemren ad kksen awgelhen i yiznan) d uzmul anmidag i usenqed n yibenkan n yimttekkiyen deg udiwenni.\n\nTAYWALT YEMMDEN: Tirawt, isawalen s taɣect d tvidyut, beṭṭu n yifuyla, beṭṭu n ugdil d tegrumma yemmden n yimsidaf, n yibuten d yiwiǧiten. Rnu tixxamin, timɣiwnin, qqim mmeslay rnu seddu lecɣl.\n\nANIDA YEƔU TILIḌ: Ili-k·ikem d wid tettmeslayeḍ anida yebɣu tiliḍ s uzray n yiznan yemtawan akken iwata ɣef meṛṛa ibenkan-inek·inem akked ɣef web deg https://mybusines.me/app.";
+"settings_callkit_info" = "Nermes-d isawalen i d-ikecmen ɣef ugdil-inek·inem isekkṛen. Wali isawalen-inek·inem n MyBusiness deg uzray n yisawalen n unagraw. Ma yella iCloud yetturmed, azray-a n yisawalen ad yettwabḍu akked Apple.";
+"store_promotional_text" = "Nermes-d isawalen i d-ikecmen ɣef ugdil-inek·inem isekkṛen. Wali isawalen-inek·inem n MyBusiness deg uzray n yisawalen n unagraw. Ma yella iCloud yetturmed, azray-a n yisawalen ad yettwabḍu akked Apple.";
 "major_update_information" = "S tumert ara awen-d-nini nbeddel isem! Asnas-inek·inem yettwaleqqem, aql-ak·akem teqqneḍ ɣer umiḍan-inek·inem.";
 "bug_report_logs_description" = "I wakken ad nessiweḍ ad d-naf uguren, iɣmisen n umsaɣ-a ad ttwaznen s uneqqis-a n wabug. Ma yella tebɣiḍ ad tazneḍ kan aḍris yellan nnig, ttxil-k·m ṛcem tabewwaḍt:";
 
@@ -1237,7 +1237,7 @@
 "pin_protection_not_allowed_pin" = "I ssebbat n tɣellist, tangalt-a PIN ulac-itt. Ttxil-k·m ɛreḍ tangalt-nniḍen n PIN";
 "user_verification_sessions_list_information" = "Iznan akked useqdac-a deg texxamt-a ttwawgelhen seg yixef ɣer yixef, ur zmiren ara ad ttwaɣren sɣur wis kraḍ.";
 "key_verification_verified_other_session_information" = "Tzemreḍ tura ad teɣreḍ iznan iɣellsanen deg tɣimit-inek·inem-nniḍen, ula d iseqdacen-nniḍen ad ẓren belli zemren ad tteklen fell-as.";
-"device_verification_self_verify_wait_information" = "Senqed tiɣimit-a seg yiwet gar tɣimiyin-inek·inem-nniḍen, serreḥ-as ad tekcem ɣer yiznan yettwawgelhen.\n\nSeqdec Qaim aneggaru ɣef yibenkan-inek·inem-nniḍen:";
+"device_verification_self_verify_wait_information" = "Senqed tiɣimit-a seg yiwet gar tɣimiyin-inek·inem-nniḍen, serreḥ-as ad tekcem ɣer yiznan yettwawgelhen.\n\nSeqdec MyBusiness aneggaru ɣef yibenkan-inek·inem-nniḍen:";
 "key_backup_setup_passphrase_info" = "Ad nekles anɣal yettwawgelhen n tsura-inek·inem ɣef uqeddac-nneɣ. Mmesten aḥraz-inek·inem s tefyirt tuffirt i wakken ad yeqqim d aɣellsan.\n\nI wugar n tɣellistt, ilaq ad yemgarad ɣef wawal uffir n umiḍan-ik·im.";
 "share_extension_failed_to_encrypt" = "Tuzna ur teddi ara. Senqed deg usnas agejdan iɣewwaren n uwgelhen n texxamt-a";
 
@@ -1248,7 +1248,7 @@
 "e2e_key_backup_wrong_version" = "Aḥraz amaynut n tsarut n yiznan iɣellsanen yettwaf-d.\n\nWagi mačči d kečč·kemm, sbadu tafyirt tuffirt tamaynut deg yiɣewwaren.";
 
 // Crypto
-"e2e_enabling_on_app_update" = "Qaim tura issefrak awgelhen seg yixef ɣer yixef maca tesriḍ ad tkecmeḍ i tikkelt-nniḍen i wakken ad t-tremdeḍ.\n\nTzemreḍ ad tgeḍ aya tura neɣ ticki deg yiɣewwaren n usnas.";
+"e2e_enabling_on_app_update" = "MyBusiness tura issefrak awgelhen seg yixef ɣer yixef maca tesriḍ ad tkecmeḍ i tikkelt-nniḍen i wakken ad t-tremdeḍ.\n\nTzemreḍ ad tgeḍ aya tura neɣ ticki deg yiɣewwaren n usnas.";
 
 // Crash report
 "google_analytics_use_prompt" = "Tebɣiḍ ad talleḍ i usnerni n %@ s tuzna s wudem awurman n yineqqisen udrigen n truẓi d yisefka n useqdec?";
@@ -1287,7 +1287,7 @@
 "key_verification_bootstrap_not_setup_message" = "Tesriḍ ad tgeḍ tazwart s uzmul anmidag qbel.";
 "key_verification_verified_this_session_information" = "Tzemreḍ tura ad teɣreḍ iznan iɣellsanen ɣef yibenk-a, ula d iseqdacen-nniḍen ad ẓren belli zemren ad tteklen fell-as.";
 "key_verification_verified_new_session_information" = "Tzemreḍ tura ad teɣreḍ iznan iɣellsanen ɣef yibenk-inek·inem amaynut, ula d iseqdacen-nniḍen ad ẓren belli zemren ad tteklen fell-as.";
-"device_verification_self_verify_wait_additional_information" = "Aya iteddu akked Qaim d yimsaɣen-nniḍen n Matrix yemṣadan d uzmul anmidag.";
+"device_verification_self_verify_wait_additional_information" = "Aya iteddu akked MyBusiness d yimsaɣen-nniḍen n Matrix yemṣadan d uzmul anmidag.";
 
 // Success from recovery key
 "key_backup_setup_success_from_recovery_key_info" = "Tisura-inek·inem ad ttwaḥerzent.\n\nEg tanɣalt n tsarut-a n tririt, rnu err-itt deg wadeg yettwaḍmanen.";
@@ -1300,7 +1300,7 @@
 
 // AuthenticatedSessionViewControllerFactory
 "authenticated_session_flow_not_supported" = "Asnas-a ur isefrak ara amtawi n usesteb ɣef uqeddac-inek·inem agejdan.";
-"security_settings_coming_soon" = "Nesḥassef. Tigawt-a ulac-itt ɣef Elemnt iOS akka tura. Ttxil-k·m seqdec amsaɣ-nniḍen n Matrix i usbadu-ines. Qaim iOS ad t-iseqdec.";
+"security_settings_coming_soon" = "Nesḥassef. Tigawt-a ulac-itt ɣef Elemnt iOS akka tura. Ttxil-k·m seqdec amsaɣ-nniḍen n Matrix i usbadu-ines. MyBusiness iOS ad t-iseqdec.";
 "security_settings_complete_security_alert_message" = "Ilaq deg tazwara ad temmed tɣellist deg tɣimit-agi-inek·inem tamirant.";
 "security_settings_blacklist_unverified_devices_description" = "Senqed meṛṛa tiɣimiyin n yiseqdac i wakken ad tcerḍeḍ fell-asent ttwattkalent, azen-asen daɣen iznan.";
 "security_settings_blacklist_unverified_devices" = "Ɣur-k·m ad tazneḍ akk iznan ɣer tɣimiyin ur nettwattkal ara";
@@ -1418,7 +1418,7 @@
 "room_participants_invite_malformed_id_title" = "Tuccḍa deg uncd";
 "room_participants_invite_another_user" = "Nadi / snubget s usulay n useqdac, Isem neɣ imayl";
 "room_participants_remove_third_party_invite_prompt_msg" = "Tebɣiḍ s tidet ad tesfesxeḍ tinnubga-a?";
-"contacts_address_book_permission_denied" = "Ur teǧǧiḍ ara Qaim ad yekcem ɣer yinermisen-ik·im idiganen";
+"contacts_address_book_permission_denied" = "Ur teǧǧiḍ ara MyBusiness ad yekcem ɣer yinermisen-ik·im idiganen";
 "directory_search_fail" = "Alqaḍ n yisefka yecceḍ";
 "room_creation_invite_another_user" = "Nadi / snubget s usulay n useqdac, Isem neɣ imayl";
 "auth_softlogout_clear_data_message_1" = "Ɣur-k·m: Isefka-inek·inem udmawanen (rnu ɣer-sen tisura n uwgelhen) mazal ttukelsent ɣef yibenk-a.";

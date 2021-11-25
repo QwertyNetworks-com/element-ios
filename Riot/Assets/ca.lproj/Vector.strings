@@ -61,18 +61,18 @@
 "auth_missing_password" = "Falta la contrasenya";
 "auth_add_email_message" = "Afegeix una adreça de correu al teu compte per permetre altres usuaris trobar-te i també poder restablir la contrasenya.";
 "auth_add_phone_message" = "Afegeix un número de telèfon al teu compte per permetre altres usuaris trobar-te.";
-"auth_add_email_phone_message" = "Afegeix una adreça Qaima i / o un número de telèfon al compte per permetre que els usuaris et descobreixin. L'adreça de correu Qaim també et permetrà restablir la teva contrasenya.";
-"auth_add_email_and_phone_message" = "Afegeix una adreça de correu i un número de telèfon al teu compte per permetre que altres usuaris et trobin. L'adreça de correu Qaim et servirà per restablir la contrasenya.";
-"auth_missing_email" = "Falta l'adreça de correu Qaim";
+"auth_add_email_phone_message" = "Afegeix una adreça MyBusinessa i / o un número de telèfon al compte per permetre que els usuaris et descobreixin. L'adreça de correu MyBusiness també et permetrà restablir la teva contrasenya.";
+"auth_add_email_and_phone_message" = "Afegeix una adreça de correu i un número de telèfon al teu compte per permetre que altres usuaris et trobin. L'adreça de correu MyBusiness et servirà per restablir la contrasenya.";
+"auth_missing_email" = "Falta l'adreça de correu MyBusiness";
 "auth_missing_phone" = "Falta el número de telèfon";
-"auth_missing_email_or_phone" = "Falta l'adreça de correu Qaim o el número de telèfon";
-"auth_email_in_use" = "Aquesta adreça de correu Qaim ja està en ús";
+"auth_missing_email_or_phone" = "Falta l'adreça de correu MyBusiness o el número de telèfon";
+"auth_email_in_use" = "Aquesta adreça de correu MyBusiness ja està en ús";
 "auth_phone_in_use" = "Aquest número de telèfon ja està en ús";
 "auth_untrusted_id_server" = "El servidor d'identitat no es confiable";
 "auth_password_dont_match" = "Les contrasenyes no son iguals";
 "auth_username_in_use" = "Nom d'usuari en ús";
 "auth_forgot_password" = "Has oblidat la contrasenya?";
-"auth_email_not_found" = "No s'ha pogut enviar el correu Qaim: no s'ha trobat aquesta adreça de correu";
+"auth_email_not_found" = "No s'ha pogut enviar el correu MyBusiness: no s'ha trobat aquesta adreça de correu";
 "auth_use_server_options" = "Utilitza les opcions de servidor personalitzades (avançat)";
 "auth_email_validation_message" = "Si us plau verifica el teu correu per a continuar el registre";
 "auth_msisdn_validation_title" = "Verificació pendent";
@@ -80,14 +80,14 @@
 "auth_msisdn_validation_error" = "No es pot verificar el número de telèfon.";
 "auth_recaptcha_message" = "A aquest servidor li agradaria assegurar-se que no ets un robot";
 "auth_reset_password_message" = "Per a restablir la teva contrasenya introdueix l'adreça de correu vinculada al teu compte:";
-"auth_reset_password_missing_email" = "Cal introduir l'adreça de correu Qaim vinculada al teu compte.";
+"auth_reset_password_missing_email" = "Cal introduir l'adreça de correu MyBusiness vinculada al teu compte.";
 "auth_reset_password_missing_password" = "Cal introduir una nova contrasenya.";
 "auth_reset_password_email_validation_message" = "S'ha enviat un correu a %@. Una vegada hagis seguit l'enllaç que conté, fes clic a baix.";
-"auth_reset_password_next_step_button" = "He verificat el meu correu Qaim";
+"auth_reset_password_next_step_button" = "He verificat el meu correu MyBusiness";
 "auth_reset_password_error_unauthorized" = "No s'ha pogut verificar l'adreça de correu: assegura't que has seguit l'enllaç del correu";
-"auth_reset_password_error_not_found" = "La teva adreça de correu Qaim no sembla està associada a una ID de Matrix en aquest servidor.";
+"auth_reset_password_error_not_found" = "La teva adreça de correu MyBusiness no sembla està associada a una ID de Matrix en aquest servidor.";
 "auth_reset_password_success_message" = "La teva contrasenya ha estat restablerta.\n\nHas tancat la sessió de tots els dispositius i ja no rebràs notificacions. Per tornar a activar les notificacions, torna a iniciar la sessió a cada dispositiu.";
-"auth_add_email_and_phone_warning" = "La inscripció amb el correu Qaim i el número de telèfon alhora no són compatibles fins que no existeixi l'api. Només es tindrà en compte el número de telèfon. Pots afegir el teu correu Qaim al teu perfil a la configuració.";
+"auth_add_email_and_phone_warning" = "La inscripció amb el correu MyBusiness i el número de telèfon alhora no són compatibles fins que no existeixi l'api. Només es tindrà en compte el número de telèfon. Pots afegir el teu correu MyBusiness al teu perfil a la configuració.";
 // Chat creation
 "room_creation_title" = "Nou Xat";
 "room_creation_account" = "Compte";
@@ -103,7 +103,7 @@
 "room_creation_keep_private" = "Mantenir en privat";
 "room_creation_make_private" = "Fer-lo privat";
 "room_creation_wait_for_creation" = "Ja s'està creant una sala. Espera.";
-"room_creation_invite_another_user" = "Cerca / convida per l'identificador d'usuari, nom o correu Qaim";
+"room_creation_invite_another_user" = "Cerca / convida per l'identificador d'usuari, nom o correu MyBusiness";
 // Room recents
 "room_recents_directory_section" = "Directori de Sales";
 "room_recents_favourites_section" = "Favorits";
@@ -132,7 +132,7 @@
 "search_people" = "Contactes";
 "search_files" = "Fitxers";
 "search_default_placeholder" = "Cerca";
-"search_people_placeholder" = "Cerca per ID d'usuari, Nom o correu Qaim";
+"search_people_placeholder" = "Cerca per ID d'usuari, Nom o correu MyBusiness";
 "search_no_result" = "Sense resultats";
 "search_in_progress" = "Cercant…";
 // Directory
@@ -166,7 +166,7 @@
 "room_participants_filter_room_members" = "Filtrar membres de la sala";
 "room_participants_invite_another_user" = "Cerca / convida per ID d'usuari, Nom o correu";
 "room_participants_invite_malformed_id_title" = "Error de convit";
-"room_participants_invite_malformed_id" = "ID incorrecte. Ha de ser una adreça de correu Qaim o un identificador de Matrix com ara '@localpart: domain'";
+"room_participants_invite_malformed_id" = "ID incorrecte. Ha de ser una adreça de correu MyBusiness o un identificador de Matrix com ara '@localpart: domain'";
 "room_participants_invited_section" = "Convidat";
 "room_participants_online" = "En línia";
 "room_participants_offline" = "Fora de línia";
@@ -281,10 +281,10 @@
 "settings_first_name" = "Nom";
 "settings_surname" = "Cognom";
 "settings_remove_prompt_title" = "Confirmació";
-"settings_remove_email_prompt_msg" = "Estàs segur que vols esborrar la adreça de correu Qaim %@?";
+"settings_remove_email_prompt_msg" = "Estàs segur que vols esborrar la adreça de correu MyBusiness %@?";
 "settings_remove_phone_prompt_msg" = "Estàs segur que vols esborrar el número de telèfon %@?";
 "settings_email_address" = "Adreça de correu";
-"settings_email_address_placeholder" = "Escriu el teu correu Qaim";
+"settings_email_address_placeholder" = "Escriu el teu correu MyBusiness";
 "settings_add_email_address" = "Afegir adreça de correu";
 "settings_phone_number" = "Telèfon";
 "settings_add_phone_number" = "Afegir número de telèfon";
@@ -540,7 +540,7 @@
 "deactivate_account_informations_part2_emphasize" = "Aquesta acció és irreversible.";
 "deactivate_account_informations_part3" = "\n\nDesactivant el teu compte ";
 "deactivate_account_informations_part4_emphasize" = "no per defecte ens obliga a oblidar els missatges que has enviat. ";
-"deactivate_account_informations_part5" = "Si vols que oblidem els teus missatges, marca el quadre següent\n\nLa visibilitat del missatge a Matrix és similar al correu Qaim. L'oblit dels teus missatges significa que els missatges que has enviat no es compartiran amb cap usuari nou o no registrat però els usuaris registrats que ja tenen accés a aquests missatges encara tindran accés a la seva còpia.";
+"deactivate_account_informations_part5" = "Si vols que oblidem els teus missatges, marca el quadre següent\n\nLa visibilitat del missatge a Matrix és similar al correu MyBusiness. L'oblit dels teus missatges significa que els missatges que has enviat no es compartiran amb cap usuari nou o no registrat però els usuaris registrats que ja tenen accés a aquests missatges encara tindran accés a la seva còpia.";
 "deactivate_account_forget_messages_information_part1" = "Si us plau oblida tots els missatges que he enviat quan el meu compte estigui desactivat (";
 "deactivate_account_forget_messages_information_part2_emphasize" = "Avís";
 "deactivate_account_forget_messages_information_part3" = ": això farà que els usuaris futurs vegin una vista incompleta de les converses)";

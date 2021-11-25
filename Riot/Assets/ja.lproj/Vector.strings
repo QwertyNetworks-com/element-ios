@@ -51,7 +51,7 @@
 "auth_repeat_password_placeholder" = "パスワード再確認";
 "auth_repeat_new_password_placeholder" = "新しいパスワードを再確認";
 "auth_home_server_placeholder" = "URL (例 https://matrix.org)";
-"auth_identity_server_placeholder" = "URL (例 https://qaim.me)";
+"auth_identity_server_placeholder" = "URL (例 https://mybusines.me)";
 "auth_invalid_login_param" = "ユーザ名かパスワードが正しくありません";
 "auth_invalid_user_name" = "ユーザ名は半角英数字、ドット、ハイフン、アンダスコアのみで記して下さい";
 "auth_invalid_password" = "パスワードが短すぎます(最小6文字)";
@@ -144,7 +144,7 @@
 "contacts_address_book_matrix_users_toggle" = "Matrix利用者のみ";
 "contacts_address_book_no_contact" = "端末内電話帳に連絡先がありません";
 "contacts_address_book_permission_required" = "端末内電話帳へのアクセス権限が必要です";
-"contacts_address_book_permission_denied" = "端末の電話帳をQaimアプリが読み取ることは許可されていません";
+"contacts_address_book_permission_denied" = "端末の電話帳をMyBusinessアプリが読み取ることは許可されていません";
 "contacts_user_directory_section" = "利用者一覧";
 "contacts_user_directory_offline_section" = "利用者一覧 (切断中)";
 // Chat participants
@@ -289,7 +289,7 @@
 "settings_show_decrypted_content" = "復号化された文章を表示";
 "settings_global_settings_info" = "あなたの %@ webクライアント上で、全体の通知設定が可能です";
 "settings_pin_rooms_with_missed_notif" = "通知の届かなかった部屋をピン止めする";
-"settings_callkit_info" = "画面がロックされているときに着信がありました。Qaimの着信はシステムの通話履歴で確認できます。 iCloudが有効になっている場合、この通話履歴はAppleと共有されます。";
+"settings_callkit_info" = "画面がロックされているときに着信がありました。MyBusinessの着信はシステムの通話履歴で確認できます。 iCloudが有効になっている場合、この通話履歴はAppleと共有されます。";
 "settings_ui_language" = "言語";
 "settings_ui_theme" = "外観";
 "settings_ui_theme_auto" = "自動";
@@ -432,14 +432,14 @@
 // Crash report
 "google_analytics_use_prompt" = "匿名の誤動作報告と使用状況データを自動的に報告して%@の改善に役立てますか？";
 // Crypto
-"e2e_enabling_on_app_update" = "Qaimはエンドツーエンド暗号化をサポートするようになりましたが、有効にするには再びログインする必要があります。\n\nアプリの設定から再ログインできます。今すぐ、または後からでも構いません。";
+"e2e_enabling_on_app_update" = "MyBusinessはエンドツーエンド暗号化をサポートするようになりましたが、有効にするには再びログインする必要があります。\n\nアプリの設定から再ログインできます。今すぐ、または後からでも構いません。";
 "e2e_need_log_in_again" = "このセッションのエンドツーエンド暗号化キーを生成し、公開キーをホームサーバーに送信するには、再度ログインする必要があります。\nこれは一度だけです。 ご不便おかけしてすみません。";
 // Bug report
 "bug_report_title" = "不具合報告";
 "bug_report_description" = "誤動作の内容と状況の説明をお願い致します。あなたは何をしましたか？何が起こると思いますか？実際何が起こったのですか？";
 "bug_crash_report_title" = "異常終了報告";
 "bug_crash_report_description" = "異常停止する前にあなたがしていたことを記してください:";
-"bug_report_logs_description" = "開発者が問題を診断するために、このQaimの動作記録が不具合報告と一緒に送信されます。上記文章のみを送信したい場合は以下のチェックを解除してください：";
+"bug_report_logs_description" = "開発者が問題を診断するために、このMyBusinessの動作記録が不具合報告と一緒に送信されます。上記文章のみを送信したい場合は以下のチェックを解除してください：";
 "bug_report_send_logs" = "動作記録を送信";
 "bug_report_send_screenshot" = "画面のスクリーンショット画像を送信";
 "bug_report_progress_zipping" = "動作記録を収集する";
@@ -552,7 +552,7 @@
 "deactivate_account_password_alert_message" = "続行するには、パスワードを入力してください";
 // Re-request confirmation dialog
 "rerequest_keys_alert_title" = "リクエスト送信";
-"rerequest_keys_alert_message" = "この端末にキーを送信できるように、メッセージを復号化できる別の端末でQaimを起動してください。";
+"rerequest_keys_alert_message" = "この端末にキーを送信できるように、メッセージを復号化できる別の端末でMyBusinessを起動してください。";
 "room_event_action_ban_prompt_reason" = "このユーザーをブロックする理由";
 "room_resource_limit_exceeded_message_contact_1" = " お願い ";
 "settings_ui_theme_black" = "Black";
@@ -812,7 +812,7 @@
 // Manage session
 "manage_session_title" = "セッションを管理";
 "security_settings_user_password_description" = "アカウントのパスワードを入力して本人確認を行う";
-"security_settings_coming_soon" = "申し訳ありません。このアクションはQaim iOSではまだ利用できません。他のMatrixクライアントを使って設定してください。将来的にはQaim iOSでも実装される予定です。";
+"security_settings_coming_soon" = "申し訳ありません。このアクションはMyBusiness iOSではまだ利用できません。他のMatrixクライアントを使って設定してください。将来的にはMyBusiness iOSでも実装される予定です。";
 "security_settings_complete_security_alert_message" = "現在のセッションのセキュリティを完了させる必要があります。";
 "security_settings_blacklist_unverified_devices_description" = "すべてのセッションを検証して、信頼できるものとしてマークしメッセージを送信します。";
 "security_settings_blacklist_unverified_devices" = "信頼していないセッションにはメッセージを送信しない";
@@ -876,7 +876,7 @@
 "settings_security" = "セキュリティー";
 "settings_three_pids_management_information_part3" = "";
 "settings_three_pids_management_information_part2" = "ディスカバリー";
-"store_full_description" = "Qaimはまったく新しいメッセンジャーアプリです。\n\n1. あなた自身がプライバシーをコントロールすることを可能にします。\n2. Matrixネットワークにいる誰とでも通信できることはもちろん、Slackなどのアプリとの連携によって他のネットワークとも通信ができます。\n3. 広告、データ収集、バックドア、ユーザーの囲い込みから逃れることができます。\n4. エンドツーエンド暗号化とクロス署名によってあなたを保護します。\n\nQaimは分散型（非中央集権型）でオープンソースであるため、他のメッセンジャーアプリと完全に異なっています。\n\nQaimはあなた自身でサーバーをホストすることも、サーバーを選ぶこともできます。これによってあなたのデータと会話に関するプライバシーや所有権はあなた自身で管理できるようになります。さらに、あなたは他のQaimユーザーと話せるだけでなくオープンネットワークへのアクセスも可能です。\n\nQaimは、オープンな分散型通信の標準規格であるMatrixで動作するため、これらすべてを実現することができています。\n\nどのサーバーがホストするか決めることができます。さまざまな方法で選択できます。\n\n1. 開発者がホストするmatrix.orgの公開サーバーで無料のアカウントを取得します。\n2. あなた自身がサーバーを動かし、アカウントを管理します。\n3. Qaim Matrix Servicesのホスティングプラットフォームに登録することで、カスタムサーバー上のアカウントを取得できます。\n\nなぜQaimを選ぶべきなのか？\n\nデータを所有する: 自分でデータやメッセージを保管する場所を決めることができます。あなたが所有権を持ってコントロールすることで、第三者にあなたのデータを渡したり、ビッグデータを収集する巨大テック企業に依存する必要がなくなります。\n\n開かれたネットワークと共同作業: Matrixネットワーク内の他の誰とでも、あるいはQaimや他のMatrixアプリを使っているかどうかに関わらず、またSlack、IRC、XMPPのような他のメッセージングシステムを使っているかどうかに関わらず、チャットすることができます。\n\nとても安全: 本物のエンドツーエンド暗号化（会話に参加している者のみがメッセージを読める）と会話参加者の真正性を確認するためクロス署名によって。\n\n完全なるコミュニケーションの訪れ: テキスト、音声通話、ビデオ通話、ファイル共有、画面共有、連携機能、ボット、ウィジェットなどのコミュニケーションに必要な機能の全てが実装されています。ルームやコミュニティを立ち上げて連絡を取り合い、物事をスムーズに成し遂げることができます。\n\nいつでもどこにいても: すべてのデバイスとウェブでメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。https://app.qaim.me";
+"store_full_description" = "MyBusinessはまったく新しいメッセンジャーアプリです。\n\n1. あなた自身がプライバシーをコントロールすることを可能にします。\n2. Matrixネットワークにいる誰とでも通信できることはもちろん、Slackなどのアプリとの連携によって他のネットワークとも通信ができます。\n3. 広告、データ収集、バックドア、ユーザーの囲い込みから逃れることができます。\n4. エンドツーエンド暗号化とクロス署名によってあなたを保護します。\n\nMyBusinessは分散型（非中央集権型）でオープンソースであるため、他のメッセンジャーアプリと完全に異なっています。\n\nMyBusinessはあなた自身でサーバーをホストすることも、サーバーを選ぶこともできます。これによってあなたのデータと会話に関するプライバシーや所有権はあなた自身で管理できるようになります。さらに、あなたは他のMyBusinessユーザーと話せるだけでなくオープンネットワークへのアクセスも可能です。\n\nMyBusinessは、オープンな分散型通信の標準規格であるMatrixで動作するため、これらすべてを実現することができています。\n\nどのサーバーがホストするか決めることができます。さまざまな方法で選択できます。\n\n1. 開発者がホストするmatrix.orgの公開サーバーで無料のアカウントを取得します。\n2. あなた自身がサーバーを動かし、アカウントを管理します。\n3. MyBusiness Matrix Servicesのホスティングプラットフォームに登録することで、カスタムサーバー上のアカウントを取得できます。\n\nなぜMyBusinessを選ぶべきなのか？\n\nデータを所有する: 自分でデータやメッセージを保管する場所を決めることができます。あなたが所有権を持ってコントロールすることで、第三者にあなたのデータを渡したり、ビッグデータを収集する巨大テック企業に依存する必要がなくなります。\n\n開かれたネットワークと共同作業: Matrixネットワーク内の他の誰とでも、あるいはMyBusinessや他のMatrixアプリを使っているかどうかに関わらず、またSlack、IRC、XMPPのような他のメッセージングシステムを使っているかどうかに関わらず、チャットすることができます。\n\nとても安全: 本物のエンドツーエンド暗号化（会話に参加している者のみがメッセージを読める）と会話参加者の真正性を確認するためクロス署名によって。\n\n完全なるコミュニケーションの訪れ: テキスト、音声通話、ビデオ通話、ファイル共有、画面共有、連携機能、ボット、ウィジェットなどのコミュニケーションに必要な機能の全てが実装されています。ルームやコミュニティを立ち上げて連絡を取り合い、物事をスムーズに成し遂げることができます。\n\nいつでもどこにいても: すべてのデバイスとウェブでメッセージの履歴が同期されるため、どこにいても連絡を取ることができます。https://app.mybusines.me";
 "user_verification_session_details_additional_information_untrusted_other_user" = "ユーザーがこのセッションを信頼するまでは、セッションとの間で送受信されるメッセージには警告が表示されます。また、手動で検証することもできます。";
 "user_verification_session_details_information_untrusted_other_user" = " 新しいセッションを使ってサインインしました:";
 "user_verification_session_details_information_untrusted_current_user" = "このセッションを検証することで、信頼できるものとしてマークし、暗号化されたメッセージへのアクセスを許可します。";

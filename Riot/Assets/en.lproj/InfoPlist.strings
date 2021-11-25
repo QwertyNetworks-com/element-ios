@@ -18,7 +18,7 @@
 // Permissions usage explanations
 "NSCameraUsageDescription" = "The camera is used to take photos and videos, make video calls.";
 "NSPhotoLibraryUsageDescription" = "The photo library is used to send photos and videos.";
-"NSMicrophoneUsageDescription" = "Qaim needs to access your microphone to make and receive calls, take videos, and record voice messages.";
-"NSContactsUsageDescription" = "Qaim will show your contacts so you can invite them to chat.";
+"NSMicrophoneUsageDescription" = "MyBusiness needs to access your microphone to make and receive calls, take videos, and record voice messages.";
+"NSContactsUsageDescription" = "MyBusiness will show your contacts so you can invite them to chat.";
 "NSCalendarsUsageDescription" = "See your scheduled meetings in the app.";
 "NSFaceIDUsageDescription" = "Face ID is used to access your app.";

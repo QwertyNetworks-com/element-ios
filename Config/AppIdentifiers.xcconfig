@@ -17,7 +17,7 @@
 
 
 // App identity
-BUNDLE_DISPLAY_NAME = Qaim
+BUNDLE_DISPLAY_NAME = MyBusiness
 BASE_BUNDLE_IDENTIFIER = im.vector.app
 APPLICATION_GROUP_IDENTIFIER = group.im.vector
 APPLICATION_SCHEME = element

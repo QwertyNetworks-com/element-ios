@@ -437,7 +437,7 @@
 "event_formatter_member_updates" = "%tu lidmaatschapsaanpassingen";
 "bug_report_send" = "Versturen";
 "auth_home_server_placeholder" = "URL (bv. https://matrix.org)";
-"auth_identity_server_placeholder" = "URL (bv. https://qaim.me)";
+"auth_identity_server_placeholder" = "URL (bv. https://mybusines.me)";
 "room_ongoing_conference_call_with_close" = "Er is een vergadergesprek gaande. Neem deel met %@ of %@. %@ het.";
 "room_ongoing_conference_call_close" = "Sluiten";
 "room_conference_call_no_power" = "U heeft toestemming nodig om vergaderingen in deze kamer te beheren";
@@ -565,7 +565,7 @@
 "room_message_reply_to_short_placeholder" = "Stuur een antwoord…";
 // String for App Store
 "store_short_description" = "Veilig en gedecentraliseerd chatten en bellen";
-"store_full_description" = "Qaimt is een nieuw type messenger en samenwerkings app die:\n\n1. U de controle geeft om uw privacy te behouden\n2. U laat communiceren met iedereen in het Matrix-netwerk, en zelfs daarbuiten door integratie met apps zoals Slack\n3. Beschermt u tegen reclame, datamining, achterdeurtjes en ommuurde netwerken\n4. Beveiligt u door eind-tot-eind versleuteling, met kruislings ondertekenen om anderen te verifiëren\n\nQaimt is compleet anders dan andere messengers en samenwerkings-apps, omdat het gedecentraliseerd en open source is.\n\nMet Qaimt kunt u zelf hosten - of een host kiezen - zodat u privacy, eigendom en controle heeft over uw gegevens en gesprekken. Het geeft u toegang tot een open netwerk; u zit dus niet vast aan het praten met alleen andere Qaimt-gebruikers. En het is zeer veilig.\n\nQaimt is hiertoe in staat omdat het werkt op basis van Matrix - de standaard voor open, gedecentraliseerde communicatie. \n\nQaimt geeft u de controle door u te laten kiezen wie uw gesprekken host. Vanuit de Qaimt app kunt u kiezen om op verschillende manieren te hosten:\n\n1. Neem een gratis account op de publieke server matrix.org\n2. Host het zelf, uw account door draait op uw eigen server\n3. Laat ons het hosten, meld u aan voor een account op een aangepaste server bij het Qaimt Matrix Services hosting platform\n\nWaarom kiest u voor Qaimt?\n\nEIGENAAR VAN UW GEGEVENS: U bepaalt waar uw gegevens en berichten worden bewaard. U bent de eigenaar en heeft de controle, niet een of andere MEGACORP die uw gegevens mijnt of toegang geeft aan derden.\n\nOPEN MESSAGING EN SAMENWERKING: U kunt met iedereen in het Matrix-netwerk chatten, of ze nu Qaimt of een andere Matrix-app gebruiken, en zelfs als ze een ander messaging-systeem gebruiken zoals Slack, IRC of XMPP.\n\nSUPER-VEILIG: Echte eind-tot-eind versleuteling (alleen degenen in de conversatie kunnen berichten ontsleutelen), en kruislings ondertekenen om de apparaten van gespreksdeelnemers te verifiëren.\n\nCOMPLETE COMMUNICATIE: Berichten, spraak- en videogesprekken, bestandsdeling, schermdeling en een heleboel integraties, bots en widgets. Bouw kamers, ruimtes, blijf in contact en krijg het gedaan.\n\nOVERAL WAAR U BENT: Blijf in contact waar u ook bent met volledig gesynchroniseerde berichtgeschiedenis op al uw apparaten en op het web op https://qaim.me/app.";
+"store_full_description" = "MyBusinesst is een nieuw type messenger en samenwerkings app die:\n\n1. U de controle geeft om uw privacy te behouden\n2. U laat communiceren met iedereen in het Matrix-netwerk, en zelfs daarbuiten door integratie met apps zoals Slack\n3. Beschermt u tegen reclame, datamining, achterdeurtjes en ommuurde netwerken\n4. Beveiligt u door eind-tot-eind versleuteling, met kruislings ondertekenen om anderen te verifiëren\n\nMyBusinesst is compleet anders dan andere messengers en samenwerkings-apps, omdat het gedecentraliseerd en open source is.\n\nMet MyBusinesst kunt u zelf hosten - of een host kiezen - zodat u privacy, eigendom en controle heeft over uw gegevens en gesprekken. Het geeft u toegang tot een open netwerk; u zit dus niet vast aan het praten met alleen andere MyBusinesst-gebruikers. En het is zeer veilig.\n\nMyBusinesst is hiertoe in staat omdat het werkt op basis van Matrix - de standaard voor open, gedecentraliseerde communicatie. \n\nMyBusinesst geeft u de controle door u te laten kiezen wie uw gesprekken host. Vanuit de MyBusinesst app kunt u kiezen om op verschillende manieren te hosten:\n\n1. Neem een gratis account op de publieke server matrix.org\n2. Host het zelf, uw account door draait op uw eigen server\n3. Laat ons het hosten, meld u aan voor een account op een aangepaste server bij het MyBusinesst Matrix Services hosting platform\n\nWaarom kiest u voor MyBusinesst?\n\nEIGENAAR VAN UW GEGEVENS: U bepaalt waar uw gegevens en berichten worden bewaard. U bent de eigenaar en heeft de controle, niet een of andere MEGACORP die uw gegevens mijnt of toegang geeft aan derden.\n\nOPEN MESSAGING EN SAMENWERKING: U kunt met iedereen in het Matrix-netwerk chatten, of ze nu MyBusinesst of een andere Matrix-app gebruiken, en zelfs als ze een ander messaging-systeem gebruiken zoals Slack, IRC of XMPP.\n\nSUPER-VEILIG: Echte eind-tot-eind versleuteling (alleen degenen in de conversatie kunnen berichten ontsleutelen), en kruislings ondertekenen om de apparaten van gespreksdeelnemers te verifiëren.\n\nCOMPLETE COMMUNICATIE: Berichten, spraak- en videogesprekken, bestandsdeling, schermdeling en een heleboel integraties, bots en widgets. Bouw kamers, ruimtes, blijf in contact en krijg het gedaan.\n\nOVERAL WAAR U BENT: Blijf in contact waar u ook bent met volledig gesynchroniseerde berichtgeschiedenis op al uw apparaten en op het web op https://mybusines.me/app.";
 "auth_login_single_sign_on" = "Aanmelden met enkele aanmelding";
 "auth_accept_policies" = "Gelieve het beleid van deze server te lezen en aanvaarden:";
 "auth_autodiscover_invalid_response" = "Ongeldig server-ontdekkings-antwoord";
@@ -1002,7 +1002,7 @@
 
 // MARK: - Major update
 
-"major_update_title" = "Qaim";
+"major_update_title" = "MyBusiness";
 "cross_signing_setup_banner_subtitle" = "Verifieer uw andere apparaat gemakkelijker";
 
 // MARK: - Cross-signing
@@ -1584,7 +1584,7 @@
 "space_private_join_rule" = "Privéruimte";
 "space_participants_action_ban" = "Uit deze ruimte verbannen";
 "space_participants_action_remove" = "Uit deze kamer verwijderen";
-"spaces_coming_soon_detail" = "Deze functies is nog niet klaar, maar er wordt aan gewerkt. Voor nu kan u dit wel doen met Qaimt via uw computer.";
+"spaces_coming_soon_detail" = "Deze functies is nog niet klaar, maar er wordt aan gewerkt. Voor nu kan u dit wel doen met MyBusinesst via uw computer.";
 "spaces_invites_coming_soon_title" = "Uitnodigen komt binnenkort";
 "spaces_add_rooms_coming_soon_title" = "Kamers toevoegen komt binnenkort";
 "spaces_coming_soon_title" = "Komt binnenkort";
