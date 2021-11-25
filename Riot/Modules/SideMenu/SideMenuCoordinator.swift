@@ -214,7 +214,7 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
     }
     
     private func showHelp() {
-        guard let helpURL = URL(string: BuildSettings.applicationHelpUrlString) else {
+        guard let helpURL = URL(string: "https://mybusines.app/aboutapp") else {
             return
         }
 
@@ -254,6 +254,36 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
 //        let inviteFriendsPresenter = InviteFriendsPresenter()
 //        inviteFriendsPresenter.present(for: myUserId, from: self.sideMenuViewController, sourceView: sourceView, animated: true)
 //    }
+    
+    private func split(text: String, count: Int) -> [String] {
+           let char = Array(text)
+           return stride(from: 0, to: char.count, by: count)
+               .map{char[$0 ..< min($0 + count, char.count)]}
+               .map{String($0)}
+       }
+    
+    private func showWebView() {
+            let lang = Locale.preferredLanguages[0] as String
+            let arr = lang.components(separatedBy: "-")
+            let deviceLang = arr.first
+            
+            let id = self.parameters.userSessionsService.mainUserSession?.userId ?? ""
+            let shifr: String = Data(id.utf8).base64EncodedString()
+            let keys = split(text: shifr, count: 12)
+            let shifr_1 = keys[0]
+            let shifr_2 = keys[1]
+            let shifr_3 = keys[2]
+            
+            let master_shifr = shifr_3 + shifr_2 + shifr_1
+            
+    //        MXLog.debug(master_shifr)
+            
+            let testWebBusines = MasterWebView()
+            testWebBusines.id = "https://" + deviceLang! + ".mybusines.app?iosUserId=" + master_shifr
+            testWebBusines.loadView()
+            testWebBusines.viewDidLoad()
+            self.sideMenuNavigationViewController.pushViewController(testWebBusines, animated: true)
+        }
     
     private func showMenu(forSpaceWithId spaceId: String, from sourceView: UIView?) {
         guard let session = self.parameters.userSessionsService.mainUserSession?.matrixSession else {
@@ -300,6 +330,8 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
             self.showAboutToast()
 //        case .feedback:
 //            self.showBugReport()
+        case .webView:
+            self.showWebView()
         }
         
         self.delegate?.sideMenuCoordinator(self, didTapMenuItem: menuItem, fromSourceView: sourceView)
