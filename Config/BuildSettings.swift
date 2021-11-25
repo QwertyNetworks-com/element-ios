@@ -112,8 +112,8 @@ final class BuildSettings: NSObject {
     
     // Note: Set empty strings to hide the related entry in application settings
     static let applicationCopyrightUrlString = "https://element.io/copyright"
-    static let applicationPrivacyPolicyUrlString = "https://qaim.me/privacy"
-    static let applicationTermsConditionsUrlString = "https://qaim.me/agreement"
+    static let applicationPrivacyPolicyUrlString = "https://mybusines.app/privacy"
+    static let applicationTermsConditionsUrlString = "https://mybusines.app/agreement"
     static let applicationHelpUrlString = "https://element.io/help"
     
     
