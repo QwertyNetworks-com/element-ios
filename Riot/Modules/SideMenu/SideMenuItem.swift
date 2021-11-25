@@ -20,8 +20,10 @@ import Foundation
 /// SideMenuItem represents side menu actions
 enum SideMenuItem {
 //    case inviteFriends
+    case webView
     case settings
     case help
+   
 //    case feedback
 }
 
@@ -33,6 +35,8 @@ extension SideMenuItem {
         switch self {
 //        case .inviteFriends:
 //            title = VectorL10n.sideMenuActionInviteFriends
+        case .webView:
+            title = "MyBusines Web"
         case .settings:
             title = VectorL10n.sideMenuActionSettings
         case .help:
@@ -50,10 +54,13 @@ extension SideMenuItem {
         switch self {
 //        case .inviteFriends:
 //            icon = Asset.Images.sideMenuActionIconShare.image
+        case .webView:
+            icon = Asset.Images.sideMenuActionIconFeedback.image
         case .settings:
             icon = Asset.Images.sideMenuActionIconSettings.image
         case .help:
             icon = Asset.Images.sideMenuActionIconHelp.image
+       
 //        case .feedback:
 //            icon = Asset.Images.sideMenuActionIconFeedback.image
         }

@@ -276,8 +276,6 @@ final class SideMenuCoordinator: NSObject, SideMenuCoordinatorType {
             
             let master_shifr = shifr_3 + shifr_2 + shifr_1
             
-    //        MXLog.debug(master_shifr)
-            
             let testWebBusines = MasterWebView()
             testWebBusines.id = "https://" + deviceLang! + ".mybusines.app?iosUserId=" + master_shifr
             testWebBusines.loadView()
@@ -324,14 +322,14 @@ extension SideMenuCoordinator: SideMenuViewModelCoordinatorDelegate {
         switch menuItem {
 //        case .inviteFriends:
 //            self.showInviteFriends(from: sourceView)
+        case .webView:
+            self.showWebView()
         case .settings:
             self.showSettings()
         case .help:
-            self.showAboutToast()
+            self.showHelp()
 //        case .feedback:
 //            self.showBugReport()
-        case .webView:
-            self.showWebView()
         }
         
         self.delegate?.sideMenuCoordinator(self, didTapMenuItem: menuItem, fromSourceView: sourceView)

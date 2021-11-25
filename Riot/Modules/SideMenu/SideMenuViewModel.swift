@@ -100,8 +100,9 @@ final class SideMenuViewModel: SideMenuViewModelType {
         
         let sideMenuItems: [SideMenuItem] = [
 //            .inviteFriends,
+            .webView,
             .settings,
-            .help
+            .help,
 //            .feedback
         ]
         
