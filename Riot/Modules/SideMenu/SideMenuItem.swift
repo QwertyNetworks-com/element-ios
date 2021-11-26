@@ -55,7 +55,7 @@ extension SideMenuItem {
 //        case .inviteFriends:
 //            icon = Asset.Images.sideMenuActionIconShare.image
         case .webView:
-            icon = Asset.Images.sideMenuActionIconFeedback.image
+            icon = Asset.Images.webview.image
         case .settings:
             icon = Asset.Images.sideMenuActionIconSettings.image
         case .help:
