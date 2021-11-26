@@ -18,8 +18,8 @@
 
 // App identity
 BUNDLE_DISPLAY_NAME = Qaim
-BASE_BUNDLE_IDENTIFIER = im.vector.app
-APPLICATION_GROUP_IDENTIFIER = group.im.vector
+BASE_BUNDLE_IDENTIFIER = me.qaim.msg
+APPLICATION_GROUP_IDENTIFIER = group.me.qaim
 APPLICATION_SCHEME = element
 
 // Team
