@@ -58,14 +58,14 @@ class DarkTheme: NSObject, Theme {
     var roomInputTextBorder: UIColor = UIColor(rgb: 0x8D97A5).withAlphaComponent(0.2)
 
     var avatarColors: [UIColor] = [
-        UIColor(rgb: 0x03B381),
+        UIColor(rgb: 0xb460e0), // 03B381
         UIColor(rgb: 0x368BD6),
         UIColor(rgb: 0xAC3BA8)]
     
     var userNameColors: [UIColor] = [
         UIColor(rgb: 0x368BD6),
         UIColor(rgb: 0xAC3BA8),
-        UIColor(rgb: 0x03B381),
+        UIColor(rgb: 0xb460e0), // 0x03B381
         UIColor(rgb: 0xE64F7A),
         UIColor(rgb: 0xFF812D),
         UIColor(rgb: 0x2DC2C5),
