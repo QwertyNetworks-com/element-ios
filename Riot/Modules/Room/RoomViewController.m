@@ -3275,7 +3275,7 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
                 NSString *userLanguage = [userLocale substringToIndex:2];
                 NSLog(@"мой язык устройсква :%@", userLanguage);
                 
-                NSString *urlString1 = @"https://test.mybusines.app/api/translate";
+                NSString *urlString1 = @"https://m.qaim.me/api/translate";
                 NSDictionary *jsonBodyDict = @{@"phrase":selectedComponent.textMessage, @"lng":userLanguage};
                 NSData *jsonBodyData = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
             
