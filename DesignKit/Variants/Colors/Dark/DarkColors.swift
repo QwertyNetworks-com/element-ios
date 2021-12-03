@@ -21,7 +21,7 @@ import SwiftUI
 /// Dark theme colors.
 public class DarkColors {
     private static let values = ColorValues(
-        accent: UIColor(rgb:0xb460e0), // 0DBD8B
+        accent: UIColor(rgb:0xb460e0),
         alert: UIColor(rgb:0xFF4B55),
         primaryContent: UIColor(rgb:0xFFFFFF),
         secondaryContent: UIColor(rgb:0xA9B2BC),
@@ -36,7 +36,7 @@ public class DarkColors {
         namesAndAvatars: [
             UIColor(rgb:0x368BD6),
             UIColor(rgb:0xAC3BA8),
-            UIColor(rgb:0xb460e0), // 0x03B381
+            UIColor(rgb:0xb460e0),
             UIColor(rgb:0xE64F7A),
             UIColor(rgb:0xFF812D),
             UIColor(rgb:0x2DC2C5),
