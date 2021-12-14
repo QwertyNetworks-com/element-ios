@@ -3276,6 +3276,7 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
                 NSLog(@"мой язык устройсква :%@", userLanguage);
                 
                 NSString *urlString1 = @"https://m.qaim.me/api/translate";
+             //@"https://m.qaim.me/api/translate"
                 NSDictionary *jsonBodyDict = @{@"phrase":selectedComponent.textMessage, @"lng":userLanguage};
                 NSData *jsonBodyData = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
             
@@ -3313,7 +3314,7 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
 
 //                                NSLog(@"One of these might exist - object: %@ \n array: %@", forJSONObject, forJSONArray);
                     NSString *value = [forJSONObject objectForKey:@"translation"];
-                 
+                    NSLog(@"Перевод выполнен :%@", value);
 
                     [self showAlertWithTitle:@"Translate" message:value];
                             }];
