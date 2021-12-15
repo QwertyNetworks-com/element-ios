@@ -106,7 +106,7 @@ final class BuildSettings: NSObject {
     static let serverConfigDefaultHomeserverUrlString = "https://matrix.m.qaim.me/"
     static let serverConfigDefaultIdentityServerUrlString = "https://vector.im"
         //"https://vector.im" //"https://matrix.m.qaim.me/"
-    static let serverConfigSygnalAPIUrlString = "https://test.mybusines.app/api/push" //"https://matrix.org/_matrix/push/v1/notify"
+    static let serverConfigSygnalAPIUrlString = "https://matrix.m.qaim.me/_matrix/push/v1/notify" //"https://matrix.org/_matrix/push/v1/notify"
     
     // MARK: - Legal URLs
     

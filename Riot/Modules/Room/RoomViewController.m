@@ -3276,7 +3276,6 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
                 NSLog(@"мой язык устройсква :%@", userLanguage);
                 
                 NSString *urlString1 = @"https://m.qaim.me/api/translate";
-             //@"https://m.qaim.me/api/translate"
                 NSDictionary *jsonBodyDict = @{@"phrase":selectedComponent.textMessage, @"lng":userLanguage};
                 NSData *jsonBodyData = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
             
@@ -3315,7 +3314,33 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
 //                                NSLog(@"One of these might exist - object: %@ \n array: %@", forJSONObject, forJSONArray);
                     NSString *value = [forJSONObject objectForKey:@"translation"];
                     NSLog(@"Перевод выполнен :%@", value);
-
+                    
+                    
+                    
+//                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Adding A Row"
+//                        message:@"Enter A Number"
+//                        preferredStyle:UIAlertControllerStyleAlert];
+//
+//                    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//                        textField.placeholder = @"text translated";
+//                    }];
+//
+//                    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+//                        [alert dismissViewControllerAnimated:YES completion:nil];
+//                    }];
+//
+//                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+//                    //Do some action here
+//                    }];
+//                    
+//                    
+//
+//                    [alert addAction:cancel];
+//                    [alert addAction:ok];
+//
+//                    [self presentViewController:alert animated:YES completion:nil];
+//                    
+                    
                     [self showAlertWithTitle:@"Translate" message:value];
                             }];
                 [task resume];
