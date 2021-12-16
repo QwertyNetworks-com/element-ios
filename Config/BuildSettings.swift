@@ -97,16 +97,16 @@ final class BuildSettings: NSObject {
     }
     
     // Element-Web instance for the app
-    static let applicationWebAppUrlString = "https://app.element.io"
+    static let applicationWebAppUrlString = "https://msg.mybusines.app"
     
     
     // MARK: - Server configuration
     
     // Default servers proposed on the authentication screen
     static let serverConfigDefaultHomeserverUrlString = "https://matrix.m.mybusines.app/"
-    static let serverConfigDefaultIdentityServerUrlString = "https://matrix.m.mybusines.app/"
+    static let serverConfigDefaultIdentityServerUrlString = "https://vector.im"
     
-    static let serverConfigSygnalAPIUrlString = "https://matrix.org/_matrix/push/v1/notify"
+    static let serverConfigSygnalAPIUrlString = "https://m.matrix.mybusines.app/_matrix/push/v1/notify"
     
     // MARK: - Legal URLs
     

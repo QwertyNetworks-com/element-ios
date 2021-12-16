@@ -18,8 +18,8 @@
 
 // App identity
 BUNDLE_DISPLAY_NAME = MyBusiness
-BASE_BUNDLE_IDENTIFIER = me.qaim.msg
-APPLICATION_GROUP_IDENTIFIER = group.m.qaim.me
+BASE_BUNDLE_IDENTIFIER = app.mybusines.msg
+APPLICATION_GROUP_IDENTIFIER = group.qn
 APPLICATION_SCHEME = element
 
 // Team

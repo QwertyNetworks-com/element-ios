@@ -10,7 +10,7 @@ import FlowCommoniOS
 public class ElementView: UIView {
     public struct Defaults {
         public static let size = CGSize(width: 130.16, height: 127.75)
-        public static let backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.021)
+        public static let backgroundColor = UIColor(rgb:0xb460e0)
     }
 
     public var icon: UIView!
